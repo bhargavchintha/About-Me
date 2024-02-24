@@ -721,19 +721,71 @@ div.Web_Projects-Design::after {
   transform: translateX(-50%);
   transition: 0.3s all ease-in-out;
 }
-div.Web_Projects:hover div.Web_Projects-Design::after {
+div.Design_web_project:hover div.Web_Projects-Design::after {
   width: 170px;
   transition: 0.3s all ease-in-out;
 }
 
-img.Bharath-Collage-Img{
+div.Collage-Project-Content{
+  width: 100%;
+  margin: auto;
+  transition: 0.3s all ease-in-out;
+}
+div.Img-Collage-Project{
+  width: 80%;
+  margin: auto;
+}
+div.Name-Clg{
+  color: var(--013B72Black);
+  position: relative;
+  transition: 0.3s all ease-in-out;
+  margin-top: 10px;
+}
+
+div.Bar-Name-Clg::after {
+  content: '';
+  width: 200px;
+  height: 4px;
+  border-radius: 5px;
+  background: var(--bed6edOR);
+  position: absolute;
+  bottom: -18%;
+  left: 13.3%; 
+  transform: translateX(-50%);
+  transition: 0.3s all ease-in-out;
+}
+div.Img-Collage-Project:hover div.Bar-Name-Clg::after {
+  width: 320px;
+  transition: 0.3s all ease-in-out;
+}
+
+h1.Bharath_collage-Files{
+  color: #069;
+}
+div.Img-Collage-Project-Text{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  transition: 0.3s all ease-in-out;
+  margin-top: 20px;
+}
+
+div.First-Grid-Image-Circle-Left{
+text-align: center;
+}
+img.Bharath-Collage-Img {
+  margin-top: 90px;
   width: 350px;
   border-radius: 5px;
   border: 2px solid #013B72;
+  cursor: pointer;
+  position: absolute; 
+  transform: translate(-50%, -50%);
 }
-
-
-
+img.Bharath-Collage-Img:hover {
+  width: 400px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 1px 2px 3px #069;
+}
 
 
 
