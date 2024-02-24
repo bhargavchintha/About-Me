@@ -402,7 +402,7 @@
             <div class="About-Web-Project">
               <div class="About-Web-Grid">
 
-                  <div class="Img-About-Web">
+                  <div  onclick="openCity(event, 'Clgproject')" class="Img-About-Web">
                       <div class="Image-Upload-Web">
                         <img class="Img-Web-Project" src="Web Pages/Web-Images/Bharath_collage.png" />
                         <div class="Text-About-Img">
@@ -411,8 +411,15 @@
                           </p>
                         </div>
                       </div>
+                      <div id="Clgproject" class="tab-web-project">
+                        <h3>Clg Project</h3>
+                        
+                        <button class="back-btn" onclick="closeTab()">Back</button>
+                      </div>
+
                   </div>
-                  <div class="Img-About-Web">
+
+                  <div  onclick="openCity(event, 'Foodproject')" class="Img-About-Web">
                     <div class="Image-Upload-Web">
                       <img class="Img-Web-Project" src="Web Pages/Web-Images/Bharath_collage.png" />
                       <div class="Text-About-Img">
@@ -421,8 +428,15 @@
                         </p>
                       </div>
                     </div>
+                    <div id="Foodproject" class="tab-web-project">
+                      <h3>Food Project</h3>
+                      
+                      <button class="back-btn" onclick="closeTab()">Back</button>
+                    </div>
+
                 </div>
-                <div class="Img-About-Web">
+
+                <div onclick="openCity(event, 'Otherproject')" class="Img-About-Web">
                   <div class="Image-Upload-Web">
                     <img class="Img-Web-Project" src="Web Pages/Web-Images/Bharath_collage.png" />
                     <div class="Text-About-Img">
@@ -431,6 +445,12 @@
                       </p>
                     </div>
                   </div>
+                  <div id="Otherproject" class="tab-web-project">
+                    <h3>Other Project</h3>
+                    
+                    <button class="back-btn" onclick="closeTab()">Back</button>
+                  </div>
+
                 </div>
 
 
@@ -532,6 +552,35 @@
 
 
 </div>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-web-project");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("Img-About-Web");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+  }
+
+  function closeTab() {
+    var tabcontent = document.getElementsByClassName("tab-web-project");
+    for (var i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    var tablinks = document.getElementsByClassName("Img-About-Web");
+    for (var i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active");
+    }
+  }
+</script>
+
+
 
 <script>
   // this is dark mode script

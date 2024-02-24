@@ -739,6 +739,7 @@ div.About-Web-Grid {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px; 
+  overflow: hidden;
 }
 
 div.Image-Upload-Web {
@@ -791,6 +792,9 @@ div.Image-Upload-Web:hover div.Text-About-Img {
       top: 50%; 
       opacity: 1; 
   }
+}
+div.tab-web-project{
+  display: none;
 }
 
 
