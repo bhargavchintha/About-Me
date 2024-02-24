@@ -725,67 +725,76 @@ div.Design_web_project:hover div.Web_Projects-Design::after {
   width: 170px;
   transition: 0.3s all ease-in-out;
 }
-
-div.Collage-Project-Content{
+div.About-Web {
   width: 100%;
   margin: auto;
-  transition: 0.3s all ease-in-out;
 }
-div.Img-Collage-Project{
+div.About-Web-Project {
   width: 80%;
   margin: auto;
 }
-div.Name-Clg{
-  color: var(--013B72Black);
-  position: relative;
-  transition: 0.3s all ease-in-out;
-  margin-top: 10px;
-}
 
-div.Bar-Name-Clg::after {
-  content: '';
-  width: 200px;
-  height: 4px;
-  border-radius: 5px;
-  background: var(--bed6edOR);
-  position: absolute;
-  bottom: -18%;
-  left: 13.3%; 
-  transform: translateX(-50%);
-  transition: 0.3s all ease-in-out;
-}
-div.Img-Collage-Project:hover div.Bar-Name-Clg::after {
-  width: 320px;
-  transition: 0.3s all ease-in-out;
-}
-
-h1.Bharath_collage-Files{
-  color: #069;
-}
-div.Img-Collage-Project-Text{
+div.About-Web-Grid {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: auto auto auto;
-  transition: 0.3s all ease-in-out;
-  margin-top: 20px;
+  gap: 20px; 
 }
 
-div.First-Grid-Image-Circle-Left{
-text-align: center;
+div.Image-Upload-Web {
+  position: relative; 
 }
-img.Bharath-Collage-Img {
-  margin-top: 90px;
-  width: 350px;
+
+img.Img-Web-Project {
+  width: 350px; 
+  height: 150px;
+  border: 2px solid #069;
   border-radius: 5px;
-  border: 2px solid #013B72;
+  transition: width 0.3s ease-in-out; 
   cursor: pointer;
-  position: absolute; 
-  transform: translate(-50%, -50%);
 }
-img.Bharath-Collage-Img:hover {
-  width: 400px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 1px 2px 3px #069;
+
+div.Text-About-Img {
+    position: absolute;
+    height: 150px;
+    width: 350px;
+    background-color: transparent;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-top: -77px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
 }
+div.Text-About-Img:hover{
+  text-decoration: underline;
+}
+div.Image-Upload-Web:hover div.Text-About-Img {
+  opacity: 1;
+  animation: slideFromTop 0.5s forwards;
+  background-color: #013b72c9;
+  display: flex;
+  box-shadow: 1px 2px 3px #013B72;
+}
+
+@keyframes slideFromTop {
+  from {
+      top: -50px; 
+      opacity: 0; 
+  }
+  to {
+      top: 50%; 
+      opacity: 1; 
+  }
+}
+
+
+
 
 
 
