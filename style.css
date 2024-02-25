@@ -794,7 +794,7 @@ div.Image-Upload-Web:hover div.Text-About-Img {
   }
 }
 div.panel{
-  display: nne; 
+  display: none; 
   position: fixed; 
   z-index: 1; 
   padding-top: 100px;
