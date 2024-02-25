@@ -402,7 +402,7 @@
             <div class="About-Web-Project">
               <div class="About-Web-Grid">
 
-                  <div  onclick="openCity(event, 'Clgproject')" class="Img-About-Web">
+                  <div  class="Img-About-Web">
                       <div class="Image-Upload-Web">
                         <img class="Img-Web-Project" src="Web Pages/Web-Images/Bharath_collage.png" />
                         <div class="Text-About-Img">
@@ -411,7 +411,7 @@
                           </p>
                         </div>
                       </div>
-                      <div id="Clgproject" class="tab-web-project">
+                      <div id="Clgproject" class="panel">
                         <h3>Clg Project</h3>
                         
                         <button class="back-btn" onclick="closeTab()">Back</button>
@@ -419,7 +419,7 @@
 
                   </div>
 
-                  <div  onclick="openCity(event, 'Foodproject')" class="Img-About-Web">
+                  <div class="Img-About-Web">
                     <div class="Image-Upload-Web">
                       <img class="Img-Web-Project" src="Web Pages/Web-Images/Bharath_collage.png" />
                       <div class="Text-About-Img">
@@ -428,15 +428,15 @@
                         </p>
                       </div>
                     </div>
-                    <div id="Foodproject" class="tab-web-project">
+                    <div id="Foodproject" class="panel">
                       <h3>Food Project</h3>
-                      
+                      <img class="Img-Web-Project" src="Web Pages/Web-Images/Bharath_collage.png" />
                       <button class="back-btn" onclick="closeTab()">Back</button>
                     </div>
 
                 </div>
 
-                <div onclick="openCity(event, 'Otherproject')" class="Img-About-Web">
+                <div  class="Img-About-Web">
                   <div class="Image-Upload-Web">
                     <img class="Img-Web-Project" src="Web Pages/Web-Images/Bharath_collage.png" />
                     <div class="Text-About-Img">
@@ -445,10 +445,11 @@
                       </p>
                     </div>
                   </div>
-                  <div id="Otherproject" class="tab-web-project">
+                  <div  class="panel">
                     <h3>Other Project</h3>
                     
                     <button class="back-btn" onclick="closeTab()">Back</button>
+                    
                   </div>
 
                 </div>
@@ -554,31 +555,33 @@
 </div>
 
 <script>
-  function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tab-web-project");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("Img-About-Web");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].classList.remove("active");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.classList.add("active");
-  }
+ var acc = document.getElementsByClassName("Img-About-Web");
+var i;
 
-  function closeTab() {
-    var tabcontent = document.getElementsByClassName("tab-web-project");
-    for (var i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    var panel = this.querySelector(".panel");
+    
+    if (panel.style.display === "block") {
+      panel.style.display = "nne";
+    } else {
+      panel.style.display = "block";
     }
-    var tablinks = document.getElementsByClassName("Img-About-Web");
-    for (var i = 0; i < tablinks.length; i++) {
-      tablinks[i].classList.remove("active");
-    }
+  });
+
+  // Add event listener to close button within each panel
+  var closeBtns = acc[i].querySelectorAll(".back-btn");
+  for (var j = 0; j < closeBtns.length; j++) {
+    closeBtns[j].addEventListener("click", function(event) {
+      event.stopPropagation(); // Prevent the click event from bubbling up to the parent
+      var panel = this.closest(".panel");
+      panel.style.display = "none";
+    });
   }
+}
+
 </script>
+
 
 
 
