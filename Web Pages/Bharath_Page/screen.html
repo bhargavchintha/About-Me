@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width-device, initial-scale=1.0" >
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: 'poppins',sans-serif;
+
+            }
+           .container{
+               width:100%;
+               height: 100vh;
+               background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url("background.png");
+               background-size: cover;
+               background-position:center;
+               padding: 0 0%;
+               position: relative;
+           }
+          /* .logo{
+               width: 120px;
+               cursor: pointer;
+               margin-left: 50px;
+           }*/
+           .cart-icon{
+            width: 30px;
+            cursor: pointer;
+           }
+           a.one{
+               text-decoration: none;
+               margin-left: 20px;
+               color: #fff;
+               font-weight: 600;
+           }
+           nav{
+               display: flex;
+               width: 100%;
+               align-items: center;
+               flex-wrap: wrap;
+               padding: 5px 0;
+           }
+           nav ul{
+               flex: 1;
+               text-align: right;
+               padding-right: 30px;
+           }
+           nav ul li{
+             display: inline-block;
+             list-style: none;
+             margin: 10px 30px;
+           }
+           nav ul li a{
+               text-decoration: none;
+               color: #fff;
+               position: relative;
+           }
+           nav ul li a:after{
+            content: '';
+            width: 0%;
+            height: 3px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: #fff;
+            transition:  0.3s;
+           }
+           nav ul li a:hover::after{
+               width: 100%;
+        
+           }
+           .text-box{
+               color: #fff;
+               position: absolute;
+               bottom: 8%;
+               margin-left: 50px;
+           }
+           .text-box p{
+               font-size: 50px;
+               font-weight: 600;
+           }
+           .text-box h1{
+             font-size: 100px;
+             line-height: 100px;
+             margin-left: -10px;
+             color: transparent;
+             -webkit-text-stroke: 1px #fff; 
+             -webkit-background-clip: text ;
+             background-image: url("back.png");
+             background-position: 0 0;
+             animation: back 20s linear infinite;
+           }
+           @keyframes back{
+               100%{
+                   background-position: 2000px 0;
+               }
+           }
+           .text-box h3{
+            font-size: 50px;
+            font-weight: 600;
+           }
+           .text-box .row {
+               display: flex;
+               align-items: center;
+               flex-wrap: wrap;
+               margin-top: 30px;
+               
+           }
+           .text-box a{
+               color: #fff;
+               text-decoration: none;
+               padding: 10px 20px;
+               margin-right: 20px;
+               border: 2px solid #fff ;
+               border-radius: 25px;
+               display: flex;
+               align-items: center;
+              
+           }
+           .text-box a:hover{
+             color: black;
+           }
+           .text-box a span{
+               font-size: 30px;
+               line-height: 15px ;
+               margin-left: 5px;
+           }
+
+           .social-icons{
+               position: absolute;
+               right: 5%;
+               bottom: 5px; 
+           }
+           .social-icons img{
+            width: 25px;
+            display: block;
+            margin: 15px 10px;
+           }
+        </style>
+    </head>
+    <body>
+            <div class="container">
+              <nav>
+                  <a class="one" href="screen.html"><h1>BHARATH</h1><!--<img src="logo.png" title="MAYRA" class="logo">--></a>
+                   
+                  <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">portfolio</a></li>
+                  </ul>
+
+                  <img src="cart.png" class="cart-icon">
+              </nav>
+
+               <div class="text-box">
+                   <p>I'M</p>
+                   <h1>SHANMUK</h1>
+                   <h3>ALL IS WELL</h3>
+ 
+                      <div class="row">
+                        <a href="">Explore My portfolio</a>
+                         <a href="">Connect With Me <span>&#x27F6;</span></a>
+                        <span>You Can Explore More About My Portfolio And Personal Life Experiences</span>
+
+                      </div>
+
+                   
+               </div>
+              
+               <div class="social-icons">
+                 <a href=""><img src="dribble.png" ></a>
+                 <a href=""><img src="telegram.png" ></a>
+                 <a href=""><img src="instagram.png" ></a>
+               </div>
+
+            </div>
+
+            
+
+    </body>
+
+</html>
+
+
+
+
+
