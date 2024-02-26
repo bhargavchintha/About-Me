@@ -41,6 +41,9 @@ body{
   --Black013B72:#013B72;
   --Oranfff:#fff;
   --0358a8BLACK:#0358a8;
+  --069OR:#069;
+  --ffffffdb:#ffffffdb;
+   --013b72c9B:#013b72c9;
 }
 
 .dark-side{
@@ -62,6 +65,9 @@ body{
   --B013B72I:#ff7900;
   --Black013B72:#ff7900;
   --Oranfff:#ff7900;
+  --069OR:#ff7900;
+  --ffffffdb:#000000c9;
+  --013b72c9B:#000000c9;
 }
 
 *{
@@ -749,7 +755,7 @@ div.Image-Upload-Web {
 img.Img-Web-Project {
   width: 350px; 
   height: 150px;
-  border: 2px solid #069;
+  border: 2px solid var(--069OR);
   border-radius: 5px;
   transition: width 0.3s ease-in-out; 
   cursor: pointer;
@@ -760,7 +766,7 @@ div.Text-About-Img {
     height: 150px;
     width: 350px;
     background-color: transparent;
-    color: white;
+    color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     margin-top: -77px;
@@ -778,9 +784,9 @@ div.Text-About-Img:hover{
 div.Image-Upload-Web:hover div.Text-About-Img {
   opacity: 1;
   animation: slideFromTop 0.5s forwards;
-  background-color: #013b72c9;
+  background-color: var(--013b72c9B);
   display: flex;
-  box-shadow: 1px 2px 3px #013B72;
+  box-shadow: 1px 2px 3px var(--ff);
 }
 
 @keyframes slideFromTop {
@@ -797,16 +803,16 @@ div.panel{
   display: none; 
   position: fixed; 
   z-index: 1; 
-  padding-top: 100px;
+  padding-top: 80px;
   left: 0;
   top: 0;
   width: 100%; 
   height: 100%; 
   overflow: auto; 
-  background-color: #013b72d4;
+  background-color: var(--ffffffdb);
   }
   div.Btn-Close-Clg{
-    position: relative;
+    position: absolute;
     margin-left: 90px;
     margin-top: 30px;
   }
@@ -814,8 +820,8 @@ div.panel{
     padding: 10px 30px;
     outline: none;
     border: 1px solid transparent;
-    background-color: #fff;
-    color: #013B72;
+    background-color: var(--B013B72I);
+    color: #fff;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
@@ -824,10 +830,10 @@ div.panel{
     transform: translate(-50%,-50%);   
   }
   button.back-btn:hover{
-    color: #fff;
-    background-color: #013B72;
-    border: 1px solid #fff;
-    box-shadow: 1px 2px 3px #BED6ED;
+    color: var(--B013B72I);
+    background-color: #fff;
+    border: 1px solid var(--B013B72I);
+    box-shadow: 1px 2px 3px var(--B013B72I);
     padding: 10px 40px;
   }
 
@@ -836,12 +842,34 @@ div.panel{
   }
   h3.Clg-Name-Bharath{
     font-size: 40px;
-    color: #fff;
+    color: var(--013B72);
+    margin-top: 50px;
   }
 
-
-
-
+div.Clg-Grid-Tittle{
+  width: 100%;
+  margin: auto;
+} 
+div.Clg-Grid-Tittle{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.Clg-Grid-Tittle-2{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 30px;
+ }
+iframe.WEb-Page_clg{
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+div.Inner-Panel-Clg{
+  margin-left: 30px;
+}
 
 
 
