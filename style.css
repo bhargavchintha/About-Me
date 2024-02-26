@@ -861,6 +861,7 @@ div.Clg-Grid-Tittle-2{
   display: grid;
   grid-template-columns: auto auto auto;
   margin-top: 30px;
+  grid-gap: 30px;
  }
 iframe.WEb-Page_clg{
   width: 100%;

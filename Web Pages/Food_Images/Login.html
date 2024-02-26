@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <title>Login page</title>
+   
     <style>
         *{
             margin: auto;
@@ -20,7 +21,7 @@
              
         }
         body{
-            background-image: url("Web Pages/Food_Images/Food_Image.jpg");
+            background-image: url("Food_Image.jpg");
             width: 100%;
             height: 100%;
             background-size: 70% 100%;
@@ -385,12 +386,7 @@ div.Tru-Yums{
     </style>
 </head>
 <body  >
-    <!--<div id="google_translate_element"></div>
-    <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>-->
+   
 
   <div class="Tru-Yums"><h1 class="Tru-Yum-1">TruYum <!--<span><i id="Knife" class="fad fa-utensils-alt"></i></span>--></h1> </div>
     <div class="LOGIN-SIGN">  
@@ -413,7 +409,7 @@ function googleTranslateElementInit() {
                   <div class="LOGIN-h1">
                       <h1 class="Login" >Login</h1>
                   </div>
-                 <form name="Myform" class="LOGIN" action="fromLogin.jsp"   method="post" ><!--action="Home.html"-->
+                 <form name="Myform" class="LOGIN" action="Login.html"  ><!--action="Home.html"-->
                     <div class="EMAIL">
                            <div class="label-email">
                                <label class="Email" for="Email" >Email</label>
@@ -431,11 +427,11 @@ function googleTranslateElementInit() {
                      <div class="remember-forgotpassword">
                        
                        <div class="Forgot-Password">
-                           <div class="For-got"><a  class="Forgot-password" href="forgot-password.html">Forgot Password ?</a></div>
-                           <div class="For-got"> <a  class="Forgot-password" href="Aboutpin.html">Forgot Pin ?</a></div>
+                           <div class="For-got"><a  class="Forgot-password" href="#">Forgot Password ?</a></div>
+                           <div class="For-got"> <a  class="Forgot-password" href="#">Forgot Pin ?</a></div>
                        </div>
                      </div>
-                     <input type="submit" name=" " class="Login" onclick="validate()" value="Login" >
+                     <input type="submit" name=" " class="Login"  value="Login" >
                     <!-- <script>
                          function validate() {
                              var email=document.getElementById("email").Value;
@@ -470,127 +466,9 @@ function googleTranslateElementInit() {
                          }
                      </script>-->
                 </form>
-                 <span class="Account" > Create a Account? </span> <a class="indx" href="Signup.html"> Signup </a>  
+                 <span class="Account" > Create a Account? </span> <a class="indx" href="#"> Signup </a>  
               </div>
-             <!-- <style>
-                  div.Name-Sign{
-                      padding-top: 50px;
-                  }
-                  div.Name-label,
-                  div.Email-label,
-                  div.phone-label{
-                      padding-top: 5px;
-                      padding-bottom: 5px;
-                  }
-                  label.Name{
-                      font-size: 19px;
-                      color:rgb(51, 51, 51) ;
-                  }
-                  div.Name-input{
-                      padding-bottom: 10px;
-                  }
-                  input[type="text"]{
-                    width: 100%;
-                     outline: none;
-                     padding: 10px 10px;
-                    border: 1px solid #d7d7d7;
-                     border-radius: 5px;
-                    text-align: center;
-                    color: #0a3847;
-                  }
-                  input[type="text"]:hover{
-                    border:1px solid #1574f5 ;
-            box-shadow:inset 0 0 0 1px #1574f5;
-                  }
-                  input[type="text"]:focus{
-                    border:1px solid #1574f5 ;
-            box-shadow:inset 0 0 0 1px #1574f5;
-                  }
-                  div.phone-sign{
-                      padding-top: 10px;
-                      padding-bottom: 10px;
-                  }
-                  span.char{
-                      font-size: 13px;
-                  }
-                  span.Already{
-                    font-size: 20px;
-                    color: rgb(51, 51, 51);
-                  }
-                  span.Already button{
-                    outline: none;
-                    border: none;
-                    background-color: transparent;
-                    color:#1574f5;
-                   font-size: 19px;
-                   cursor: pointer;
-                  }
-                  span.Already button:hover{
-                      color: #000;
-                      text-decoration: underline;
-                      transition: all 0.4 ease;
-                  }
-                
-              </style>
-              <div id="sign-up" class="tabcontent">
-                <div class="sign-up-1">
-                    <h1 class="Login" >Sign up</h1>
-                  <div class="sign-up-2">
-                      <form  method="post"  name="contactForm" action="fromsignup.jsp" onsubmit=" validateForms()" >
-
-                          <div class="Name-Sign">
-                              <div class="Name-label">
-                                  <label  class="Name" id="Name" for="name">Name</label>
-                              </div>
-                              <div class="Name-input">
-                                  <input type="text" pattern="[a-z]{1,15}"  placeholder=" Enter Your Name"  name="name"    required  />
-                              </div>
-                          </div>
-
-                            <div class="Email-Sign">
-                                <div class="Email-label">
-                                    <label class="Name" for="email" >Email</label>
-                                </div>
-                                <div class="Email-input">
-                                    <input type="text" id="email" 
-                                    pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
-                                    placeholder="Email"  name="email"  required />
-                                </div>
-                            </div>
-
-                            <div class="phone-sign">
-                                <div class="phone-label">
-                                    <label class="Name" for="phone" >Phone Number</label>
-                                </div>
-                                <div class="Phone-input">
-                                    <input type="text"  pattern="^\d{3}\d{3}\d{4}$"  name="phone"  placeholder="Phone number"  required />
-                                </div>
-                            </div>
-
-                            <div class="Password-1-sign">
-                                <div class="password-label">
-                                    <label class="Name" for="password">Password <span  class="char" >(8 characters maximum)</span></label>
-                                </div>
-                                <div class="password-input">
-                                    <input type="text" id="password-1" minlength="8" required  placeholder="Password" name="Password" />
-                                </div>
-                            </div>
- 
-                            <div class="Password-2-sign">
-                                <div class="password-label">
-                                    <label class="Name" for="password"> Confirm Password</label>
-                                </div>
-                                <div class="password-input">
-                                    <input type="text"  id="password-2" minlength="8" required  placeholder=" Confirm  Password" name="cpassword" />
-                                </div>
-                            </div>
-
-                            <input type="submit" value="Submit"    >
-                      </form>
-                      <div class="LOGIN">
-                          <span class="Already"> Already have an account?   <button   class="tablinks Login-btn " onclick="openCity(event, 'Login')"  id="defaultOpen" >Login</button></span>
-                      </div>  
-                    </div>  -->
+            
                 </div>
               </div>
       
