@@ -80,7 +80,7 @@ body{
     box-sizing: border-box;  
   }
 
-  @media screen and (max-width: 940px){
+  @media screen and (max-width: 40px){
     div.Hole-Body{
       display: none;
     }
@@ -89,7 +89,7 @@ body{
     display: none;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 40px) {
     h1.Under {
         display: block;
         font-size: 50px; 
@@ -108,41 +108,60 @@ h1.Under{
   margin-top: 20%;
 }
 
-header.Head-File{
+.Head-File {
   position: fixed;
-  z-index: 10000;
+  z-index: 999999999;
   width: 100%;
   margin: auto;
-  display: grid;
-  grid-template-columns: auto auto;
   background-color: var(--BED6ED);
-  padding:15px;
+  padding:14px;
   transition: all 0.3s ease-in-out; 
-}
-
-a.BHAR-Name{
-  display:inline;
-  color: var(--013B72);
-  text-decoration: none;
-  font-family: 'Dancing Script', cursive;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+a.BHAR-Name {
+  color: var(--013B72);
   text-decoration: none;
-  font-weight: 700;
-  transition: all 0.3s ease-in-out; 
- }
-img.Img-Src{
+  display: flex;
+  align-items: center;
+  font-family: 'Dancing Script', cursive;
+}
+div.Grid-1{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+.Img-Src {
   width: 50px;
-  height: auto;
+  height: auto; 
+  margin-right: 5px;
   filter: var(--invert-black);
-  transition: all 0.3s ease-in-out; 
 }
-div.Grid-2{
-  text-align: right;
-  margin-right: 100px;
-  margin-top: 15px;
-  transition: all 0.3s ease-in-out; 
+
+.Move {
+  font-weight: bold;
 }
+
+.nav_ico,.nav_I {
+  display: none; 
+}
+
+.main_nav {
+  display: flex;
+  align-items: center;
+}
+
+.Header-Files {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 a.NAV-Items{
   text-decoration: none;
   font-size: 23px;
@@ -151,6 +170,7 @@ a.NAV-Items{
   font-weight: 700;
   transition: all 0.3s ease-out;
 }
+
 a.NAV-Items:hover{
 background-color:var(--D8E4EB);
 border-radius: 5px;
@@ -166,6 +186,60 @@ a.NAV-Items:focus{
   color: var(--0358a8);
   transition: all 0.3s ease-in-out; 
   }
+
+  @media screen and (max-width: 900px) {
+  .nav_ico {
+    display: block; 
+    cursor: pointer;
+  }
+
+  .Header-Files {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background-color: var(--BED6ED);
+    z-index: 999999999;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: slideDown 0.3s ease; 
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    padding-top: 20px;
+  }
+ .fa-bars,
+ .fa-times{
+  color: var(--013B72);
+ }
+  
+  #menuTrigger:checked ~ .Header-Files {
+    display: flex;
+  }
+
+  .Header-Files li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Header-Files a {
+    width: 100%;
+  }
+
+  @keyframes slideDown {
+    from {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  }
+}
 
 div.Gird-Curved{
   padding-top: 70px;
@@ -286,7 +360,6 @@ img.IMG_FAV{
 }
 
 button.BUTNS{
-  position:absolute;
   background-image: var(--sun);
   background-repeat: no-repeat;
   background-color: transparent;
@@ -296,10 +369,26 @@ button.BUTNS{
   outline:none;
   border: none;
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-top: 6px;
   transition: all 0.3s ease-in-out; 
 }
 
+#button{
+  display: none;
+}
+@media screen and (max-width:900px) {
+  #button{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end; 
+    text-align: right;
+    right: 10px;
+  }
+  button.BUTNS{
+    display: none;
+  }
+}
 div.About-MySelf{
   width: 100%;
   margin: auto;

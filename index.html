@@ -28,23 +28,31 @@
     <h1 class="Under">Not Available Right Now</h1>
   </div>
   <div class="Hole-Body">
-    <header class="Head-File"  >
+    
+    
+    <header class="Head-File">
       <div class="Grid-1">
-        <a  class="BHAR-Name" href="index.html"><h1 class="NAME-BH"><img class="Img-Src" src="Images/avatar-Black.png" /><span class="Move"> Bhargav </span> </a></h1>  
+        <a class="BHAR-Name" href="index.html">
+          <h1 class="NAME-BH">
+            <img class="Img-Src" src="Images/avatar-Black.png" />
+          </h1>
+          <h1 class="NAME-BH" > <span class="Move"> Bhargav </span> </h1>
+        </a>
       </div>
       <div class="Grid-2">
+        <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+        <input id="menuTrigger" type="checkbox"  class="nav_I">
         <nav class="Header-Files">
-          <a class="NAV-Items a" href="#HOME" >Home</a>
-          <a class="NAV-Items b" href="#About">About</a>
-          <a class="NAV-Items c" href="#Skills" >Skills</a>
-          <a class="NAV-Items c" href="#Project" >Projects</a>
-          <a class="NAV-Items d" href="#Contant">Contact</a>
-          <button onclick="myFunction()" class="BUTNS" title="Change To Dark Mode"></button>
+          <button onclick="myFunction()" class="BUTNS Button_BTN " id="button" title="Change To Dark Mode"></button>
+            <a class="NAV-Items a" href="#HOME">Home</a>
+            <a class="NAV-Items b" href="#About">About</a>
+            <a class="NAV-Items c" href="#Skills">Skills</a>
+            <a class="NAV-Items c" href="#Project">Projects</a>
+            <a class="NAV-Items d" href="#Contant">Contact</a>
+            <button onclick="myFunction()" class="BUTNS  Button_BTN " title="Change To Dark Mode"></button>
         </nav>
-      
       </div>
     </header>
-
     <div class="Gird-Curved" id="HOME" >
       <div class="curved">
    
@@ -925,29 +933,71 @@
 
 
   <script>
-    document.getElementById("myForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent the default form submission
+    document.addEventListener('DOMContentLoaded', function() {
+    const menuTrigger = document.getElementById('menuTrigger');
+    const navItems = document.querySelectorAll('.Header-Files .NAV-Items');
+    const menuIcon = document.querySelector('.nav_ico i');
   
-      // Submit the form data using Fetch API
+    // Function to toggle menu icon
+    function toggleMenuIcon() {
+      if (menuIcon.classList.contains('fa-bars')) {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-times');
+      } else {
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+      }
+    }
+  
+    
+    function closeMenu() {
+      if (window.innerWidth <= 900) {
+        menuTrigger.checked = false; 
+        if (menuIcon.classList.contains('fa-bars')) {
+          toggleMenuIcon(); 
+        }
+      }
+    }
+  
+  
+    menuIcon.addEventListener('click', toggleMenuIcon);
+  
+    navItems.forEach(item => {
+      item.addEventListener('click', function() {
+        closeMenu();
+        toggleMenuIcon(); 
+      });
+    });
+  });
+  
+  
+  </script>
+
+
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+  
+      
       fetch(this.action, {
         method: this.method,
         body: new FormData(this)
       })
       .then(response => {
         if (response.ok) {
-          // Form submission successful, redirect after 3 seconds
+        
           setTimeout(function() {
             window.location.href = "index.html";
-          }, 3000);
+          }, 1000);
         } else {
-          // Form submission failed, handle error
+          
           console.error('Form submission failed:', response.status);
-          // Optionally, display an error message to the user
+          
         }
       })
       .catch(error => {
         console.error('Error submitting form:', error);
-        // Optionally, display an error message to the user
+        
       });
     });
   </script>
@@ -969,11 +1019,11 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 
-  // Add event listener to close button within each panel
+ 
   var closeBtns = acc[i].querySelectorAll(".back-btn");
   for (var j = 0; j < closeBtns.length; j++) {
     closeBtns[j].addEventListener("click", function(event) {
-      event.stopPropagation(); // Prevent the click event from bubbling up to the parent
+      event.stopPropagation(); 
       var panel = this.closest(".panel");
       panel.style.display = "none";
     });
@@ -989,7 +1039,7 @@ for (i = 0; i < acc.length; i++) {
     }
 </script>
 <script>
-  // After to store the value of the dark mode, because when you are in the dark mode if refresh also it should in that only    
+
   window.onload = function() {
   
   const isDarkMode = localStorage.getItem("darkMode");
