@@ -755,21 +755,22 @@
                  <!--Thrid Grid Start Here-->
                 <div  class="Img-About-Web">
                   <div class="Image-Upload-Web">
-                    <img class="Img-Web-Project" src="Web Pages/Web-Images/Bharath_collage_1.png" />
+                    <img class="Img-Web-Project" src="up_Ealry_Designs/Up_Early_Des.png" />
                     <div class="Text-About-Img">
                       <p class="Img-Text">
-                        Other Project
+                        Up Ealry Design
                       </p>
                     </div>
                   </div>
                   <!--Thrid (OUTER PANEL) Panel Start Here -->
                   <div  class="panel">
-                    <h3>Other Project</h3>
                     
                     <div class="Btn-Close-Clg">
                       <button class="back-btn" onclick="closeTab()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                     </div>
-                    
+
+                    <iframe class="WEb-Page_clg" src="up_Ealry_Designs/full service.html" ></iframe>
+
                   </div>
                   <!--  Third (OUTER PANEL) End here  -->
                 </div>
@@ -788,89 +789,125 @@
     </div>
 
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!--Contact    Details   -->
+  
+  <div id="Contant" class="Contact_Details">
+    <div class="About-MySelf">
+      <div class="About-Myself-1">
+          <div class="Name-About">
+            <h1 class="About-Name">Contant</h1>
+          </div> 
+      </div>
+      <div class="Contant_Details_Width">
+        <div class="Contact_Details_Max_Width">
+          <div class="Grid_Contant-Details">
+
+             <div class="Grid_Contant-Details_Content-1">
+               <div class="Connect">
+                 <div class="Connect_ME-1">
+                  <h1 class="Connect_us">
+                    Connect Me
+                   </h1>
+                   <p class="Submit_Details">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connect Me, Let's discuss about this project and iam happy to share my thoughths.
+                   </p>
+                 </div>
+               </div>
+             </div>
+
+             <div class="Grid_Contant-Details_Content-2">
+              <div class="Form_Details">
+                 <div class="Form_Connect">
+                    <form class="myForm_Connect"  id="myForm" action="https://script.google.com/macros/s/AKfycbyksK3tDCVct3a0F07EoncmluPqHM6kdYrBh9Y4SxlHdG3FbqKVxrs1lTILvltKN31uEA/exec"  method="post" >
+
+                     <div class="Label_Email">
+
+                      <div class="Label">
+                        <label class="Input_Label" for="Name">Name:</label>
+                      </div>
+                      <div class="Name">
+                        <input type="text" placeholder="Enter Your Name" name="Name"  required />
+                      </div>
+                       
+                      <div class="Label">
+                        <label class="Input_Label" for="Name">Email:</label>
+                      </div>
+                      <div class="Name">
+                        <input type="Email" placeholder="Enter Your Email" name="Email"  required />
+                      </div>
+  
+                      <div class="Label">
+                        <label class="Input_Label" for="Name">PhoneNo:</label>
+                      </div>
+                      <div class="Name">
+                        <input type="number" placeholder="Enter Your Phone Number" name="PhoneNo" required />
+                      </div>
+
+                      <div class="Label">
+                        <label class="Input_Label" for="Name">Message:</label>
+                      </div>
+                      <div class="Name">
+                        <input type="text" placeholder="Message" name="Message" required />
+                      </div>
+                      
+                     </div>
+                      <div class="Label_Hint">
+                        <p class="Note">
+                          After Submit it Will take more then 7seconds, so please wait until it Submit the form 
+                        </p>
+                      </div>
+                        <div class="Submit_BTN">
+                          <input type="submit" value="Submit"/>
+                        </div>
+
+                    </form>
+                 </div>
+              </div>
+             </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="Footer_Details">
+    <div class="Footer_Details_Width">
+       <div class="Footer_Svg_Details">
+        
+       </div>
+    </div>
+  </div>
+
+
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+  
+      // Submit the form data using Fetch API
+      fetch(this.action, {
+        method: this.method,
+        body: new FormData(this)
+      })
+      .then(response => {
+        if (response.ok) {
+          // Form submission successful, redirect after 3 seconds
+          setTimeout(function() {
+            window.location.href = "index.html";
+          }, 3000);
+        } else {
+          // Form submission failed, handle error
+          console.error('Form submission failed:', response.status);
+          // Optionally, display an error message to the user
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        // Optionally, display an error message to the user
+      });
+    });
+  </script>
 
 </div>
 
@@ -901,10 +938,6 @@ for (i = 0; i < acc.length; i++) {
 }
 
 </script>
-
-
-
-
 <script>
   // this is dark mode script
   function myFunction() {
@@ -933,43 +966,5 @@ function myFunction() {
   localStorage.setItem("darkMode", isDarkMode);
 }
 </script>
-  
-     
-  
-  
-
-
-
-
-
-</body>
-<pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</pre>
+  </body>
 </html>

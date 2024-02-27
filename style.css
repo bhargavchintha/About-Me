@@ -43,7 +43,8 @@ body{
   --0358a8BLACK:#0358a8;
   --069OR:#069;
   --ffffffdb:#ffffffdb;
-   --013b72c9B:#013b72c9;
+  --013b72c9B:#013b72c9;
+   --Color:rgb(43, 171, 235);
 }
 
 .dark-side{
@@ -68,6 +69,7 @@ body{
   --069OR:#ff7900;
   --ffffffdb:#000000c9;
   --013b72c9B:#000000c9;
+  --Color:#000000d4;
 }
 
 *{
@@ -871,8 +873,110 @@ iframe.WEb-Page_clg{
 div.Inner-Panel-Clg{
   margin-left: 30px;
 }
-
-
+div.Contact_Details{
+  margin-top: 30px;
+}
+div.Contant_Details_Width{
+  width: 100%;
+  margin: auto;
+}
+div.Contact_Details_Max_Width{
+  width: 80%;
+  margin: auto;
+}
+div.Grid_Contant-Details{
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+div.Connect{
+  width: 100%;
+  margin: auto;
+}
+div.Connect_ME-1{
+  width: 80%;
+  margin: auto;
+}
+h1.Connect_us{
+  color: var(--013B72Black);
+  font-size: 30px;
+  padding-bottom: 7px;
+}
+p.Submit_Details{
+  color: var(--069OR);
+}
+div.Form_Connect{
+  width: 100%;
+  margin: auto;
+  border: 1px solid var(--013B72Black);
+  box-shadow: 1px 2px 3px var(--013B72Black);
+  border-radius: 10px;
+}
+form.myForm_Connect{
+ width: 100%;
+ margin: auto;
+ padding: 20px;
+}
+div.Label{
+  padding-bottom: 5px;
+}
+div.Name{
+  padding-bottom: 5px;
+}
+label.Input_Label{
+  font-size: 18px;
+  color: var(--013B72Black);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+input[type="text"],
+input[type="Email"],
+input[type="number"]{
+width: 100%;
+padding: 15px 30px;
+color: var(--069OR);
+text-align: center;
+border-radius: 5px;
+border: 1px solid var(--069OR);
+}
+div.Submit_BTN{
+  padding-top: 10px;
+}
+input[type="submit"]{
+  font-size: 20px;
+  background-color: var(--B013B72I);
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 40px;
+  outline: none;
+  border: 1px solid var(--B013B72I);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+input[type="submit"]:hover{
+  background-color: #fff;
+  color: var(--B013B72I); 
+  box-shadow: 1px 2px 3px var(--B013B72I);
+}
+div.Label_Hint{
+  padding-top:5px;
+  padding-left:5px;
+}
+p.Note{
+  color:var(--Color);
+}
+div.Footer_Details_Width{
+  background-image: url(Svg/Wave_Animation_Black.svg);
+  width: 100%;
+  height:500px;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+}
+div.Footer_Svg_Details{
+  
+}
 
 
 
