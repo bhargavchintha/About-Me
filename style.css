@@ -256,6 +256,41 @@ div.curved {
   background-position: 100% 0%;
   transition: all 0.3s ease-in-out; 
 }
+@media screen and (max-width: 1090px){
+  div.curved{
+    height: 500px;
+  }
+}
+@media screen and (max-width: 920px){
+  div.curved{
+    height: 450px;
+  }
+}
+@media screen and (max-width: 800px){
+  div.curved{
+    height: 400px;
+  }
+}
+@media screen and (max-width: 655px){
+  div.curved{
+    height: 390px;
+  }
+}
+@media screen and (max-width: 550px){
+  div.curved{
+    height: 350px;
+  }
+}
+@media screen and (max-width: 440px){
+  div.curved{
+    height: 335px;
+  }
+}
+@media screen and (max-width: 200px){
+  div.curved{
+    overflow: hidden;
+  }
+}
 
 div.Details-Grid{
   width: 100%;
@@ -266,9 +301,41 @@ div.Details-Grid-1{
   width: 80%;
   margin: auto;
 }
+@media screen and (max-width: 740px){
+  div.Details-Grid-1{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px){
+  div.Details-Grid-1{
+    width: 95%;
+  }
+}
+@media screen and (max-width: 570px){
+  div.Details-Grid-1{
+    width: 98%;
+  }
+}
+@media screen and (max-width: 200px){
+  div.Details-Grid-1{
+    overflow: hidden;
+  }
+}
+
 div.Details-Grid-2{
   display: grid;
   grid-template-columns: auto auto;
+}
+
+@media screen and (max-width: 440px){
+  div.Details-Grid-2{
+    align-items: center;
+  }
+}
+@media screen and (max-width: 389px){
+  div.Details-Grid-2{
+    grid-template-columns: auto;
+  }
 }
 div.Details-Grid-First-Text{
   margin-top: 50px;
@@ -282,6 +349,32 @@ h1.Name-BH {
   animation: movieEffect 2s ease-in-out; 
   transition: all 0.3s ease-in-out; 
 }
+@media screen and (max-width: 1200px){
+h1.Name-BH{
+  font-size: 60px;
+}
+}
+@media screen and (max-width: 1090px){
+  h1.Name-BH{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 850px){
+    h1.Name-BH{
+      font-size: 40px;
+    }
+}
+@media screen and (max-width: 550px){
+  h1.Name-BH{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 236px){
+  h1.Name-BH{
+    font-size: 20px;
+  }
+}
+
 @keyframes movieEffect {
   0% {
     transform: translateX(-100%);
@@ -303,6 +396,38 @@ h2.Design{
   opacity: 0;
   transition: all 0.3s ease-in-out; 
 }
+@media screen and (max-width: 1200px){
+  h2.Design{
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1090px){
+  h2.Design{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 850px){
+  h2.Design{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 550px){
+  h2.Design{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 460px){
+  h2.Design{
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 236px){
+  h2.Design{
+    margin-left: 6.5px;
+    font-size: 15px;
+  }
+}
+
 @keyframes movieSide {
   0% {
     transform: translateX(-100%);
@@ -324,6 +449,44 @@ h3.Address-Name{
   opacity: 0;
   transition: all 0.3s ease-in-out; 
 }
+@media screen and (max-width: 1200px){
+  h3.Address-Name{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 1120px){
+  h3.Address-Name{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 850px){
+  h3.Address-Name{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 550px){
+  h3.Address-Name{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 481px){
+  h3.Address-Name{
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 460px){
+  h3.Address-Name{
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 236px){
+  h3.Address-Name{
+    margin-left: 15px;
+    font-size:12px;
+  }
+}
+
+
 @keyframes movieASide {
   0% {
     transform: translateX(-100%);
@@ -340,12 +503,59 @@ div.Img-Grid{
   position: absolute;
   transition: all 0.3s ease-in-out; 
 }
-
+@media screen and (max-width: 1500px){
+div.Img-Grid{
+  float: left;
+  position: relative;
+  margin-left: 30px;
+}
+}
+@media screen and (max-width: 520px){
+  div.Img-Grid{
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 495px){
+  div.Img-Grid{
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 389px){
+  div.Img-Grid{
+    display: none;
+  }
+}
 img.IMG_FAV{
   width: 450px;
   filter: var(--invert-white);
   animation: movieIMG 2s ease-in-out;
   transition: all 0.3s ease-in-out; 
+  margin-top: 10px;
+}
+@media screen and (max-width: 1090px){
+  img.IMG_FAV{
+    width: 350px;
+  }
+}
+@media screen and (max-width: 920px){
+  img.IMG_FAV{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 800px){
+  img.IMG_FAV{
+    width: 250px;
+  }
+}
+@media screen and (max-width: 655px){
+  img.IMG_FAV{
+    width: 200px;
+  }
+}
+@media screen and (max-width: 440px){
+  img.IMG_FAV{
+    width: 150px;
+  }
 }
 
 @keyframes movieIMG {
@@ -433,12 +643,86 @@ div.About-Grid-Name{
   margin: auto;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width:1180px){
+  div.About-Grid-Name{
+    width: 80%;
+    margin-left: 180px;
+  }
+}
+@media screen and (max-width:1000px){
+  div.About-Grid-Name{
+    width: 80%;
+    margin-left: 140px;
+  }
+}
+@media screen and (max-width:1000px){
+  div.About-Grid-Name{
+    width: 80%;
+    margin-left: 140px;
+  }
+}
+@media screen and (max-width:900px){
+  div.About-Grid-Name{
+    width: 85%;
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width:800px){
+  div.About-Grid-Name{
+    width: 85%;
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width:700px){
+  div.About-Grid-Name{
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  div.About-MY-Self{
+  margin-top: -30px;
+  }
+}
+@media screen and (max-width:450px){
+  div.About-Grid-Name{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+}
+
 img.IMG-Grid-BH{
   width: 400px;
   filter:brightness(.6); 
 }
-
+@media screen and (max-width:1000px){
+  img.IMG-Grid-BH{
+    width: 350px;
+  }
+}
+@media screen and (max-width:900px){
+  img.IMG-Grid-BH{
+    width: 300px;
+  }
+}
+@media screen and (max-width:797px){
+  img.IMG-Grid-BH{
+    width: 250px;
+  }
+}
+@media screen and (max-width:797px){
+  img.IMG-Grid-BH{
+    width: 250px;
+    float: left;
+  }
+}
+@media screen and (max-width:550px){
+  img.IMG-Grid-BH{
+    width: 200px;
+  }
+}
 div.About-Image-Left {
   display: flex;
   justify-content: center;
@@ -458,7 +742,56 @@ div.About-Image-Left-Side {
   background-position: center;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 1470px){
+  div.About-Image-Left-Side{
+    margin-left: -0px;
+    width: 12.5%;
+  }
+}
 
+@media screen and (max-width: 1180px){
+  div.About-Image-Left-Side{
+    margin-left: -50px;
+    width: 13%;
+  }
+}
+@media screen and (max-width: 1125px){
+  div.About-Image-Left-Side{
+    margin-left: -50px;
+    width: 14.5%;
+  }
+}
+@media screen and (max-width: 1000px){
+  div.About-Image-Left-Side{
+    margin-left: -50px;
+    width: 15.5%;
+  }
+}
+@media screen and (max-width: 960px){
+  div.About-Image-Left-Side{
+    width: 16.5%;
+  }
+}
+@media screen and (max-width: 890px){
+  div.About-Image-Left-Side{
+    width: 17.5%;
+  }
+}
+@media screen and (max-width: 850px){
+  div.About-Image-Left-Side{
+    width: 19%;
+  }
+}
+@media screen and (max-width: 775px){
+  div.About-Image-Left-Side{
+    width: 21%;
+  }
+}
+@media screen and (max-width: 700px){
+  div.About-Image-Left-Side{
+    display: none;
+  }
+}
 div.About-Image-Right{
   display: flex;
   justify-content: center;
@@ -475,12 +808,33 @@ div.About-Image-Right-Side {
   background-size: cover; 
   background-position: center;
   transition: all 0.3s ease-in-out;
+  
 }
+@media screen and (max-width: 1470px){
+  div.About-Image-Right-Side{
+    margin-left: 0px;
+    width: 12%;
+  }
+}
+@media screen and (max-width: 1220px){
+  div.About-Image-Right-Side{
+    margin-left: 0px;
+    width: 12.5%;
+  }
+}
+@media screen and (max-width: 1180px){
+  div.About-Image-Right-Side{
+    display: none;
+  }
+}
+
+
 p.Text-About-Me{
   color: var(--013B72Black);
   font-family: "PT Serif", serif;
   font-size: 18px;
   line-height: 28px;
+  margin-top: 20px;
 }
 span.About-BHa{
   font-weight: 700;
@@ -516,6 +870,16 @@ a.Link-Github {
   width: 50px;
   height: 50px;
   text-decoration: none;
+}
+@media screen and (max-width: 460px){
+  a.Link-Linked,
+  a.Link-Twitter,
+  a.Link-instagram,
+  a.Link-Github{
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+  }
 }
 a.Link-Linked:hover,
 a.Link-Twitter:hover,
@@ -571,7 +935,61 @@ div.Skills-About-Me{
 div.Skills-About-My{
   width: 50%;
   margin: auto;
+  transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 1180px){
+  div.Skills-About-My{
+    width: 70%;
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 1000px){
+  div.Skills-About-My{
+    width: 65%;
+  }
+}
+@media screen and (max-width: 860px){
+  div.Skills-About-My{
+    width: 70%;
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 700px){
+  div.Skills-About-My{
+    width: 80%;
+    margin-left: 130px;
+  }
+  div.About-MY-Self-1{
+    margin-top: 30px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 660px){
+  div.Skills-About-My{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 550px){
+  div.Skills-About-My{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px){
+  div.Skills-About-My{
+    width: 95%;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 400px){
+  div.Skills-About-My{
+    width: 90%;
+    margin-left: 20px;
+  }
+}
+
 div.Skills-About-Slef {
   text-align: center;
   color: var(--013B72Black);
