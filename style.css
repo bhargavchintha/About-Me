@@ -1681,6 +1681,7 @@ div.Grid_Footer_Details{
     justify-items: center;
     align-items: center;
     overflow: hidden;
+    grid-gap:10px;
   }
 }
 @media screen and (max-width: 1000px){
@@ -1752,7 +1753,9 @@ span.Red_Note{
   color: red;
 }
 
-
+a.ID-Index{
+  text-decoration: none;
+}
 
 /*
 #BED6ED, like #D8E4EB
