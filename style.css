@@ -910,7 +910,7 @@ div.Btn-Contact_ME{
   text-align: right;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 a.Contant_me_BTn{
   text-decoration: none;
@@ -974,9 +974,14 @@ div.Skills-About-My{
   div.Skills-About-My{
     width: 85%;
     margin: auto;
-    overflow: hidden;
     margin-left: 50px;
+
   }
+}
+div.Html-Image-About{
+  width: 100%;
+  margin: auto;
+  position: relative;
 }
 @media screen and (max-width: 550px){
   div.Skills-About-My{
@@ -985,7 +990,7 @@ div.Skills-About-My{
 }
 @media screen and (max-width: 480px){
   div.Skills-About-My{
-    width: 95%;
+    width: 100%;
     margin-left: 20px;
   }
 }
@@ -1214,6 +1219,11 @@ div.Download-Project-Btn{
   text-align: right;
   margin-right: 20px;
 }
+@media screen and (max-width: 1200px){
+  div.Download-Project-Btn{
+    margin-top: 30px;
+  }
+}
 div.Download-Project-En{
   margin-top: 30px;
   text-align: right;
@@ -1336,10 +1346,10 @@ img.Img-Web-Project {
     height: 150px;
   }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 390px){
   img.Img-Web-Project{
-    width: 100%;
-    height: 150px;
+    width: 200;
+    height: 100px;
   }
 }
 div.Text-About-Img {
@@ -1398,11 +1408,11 @@ div.Text-About-Img {
     margin-top: -77px;
   }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 390px){
   div.Text-About-Img{
-    width: 100%;
-    height: 150px;
-    margin-top: -77px;
+    width: 200;
+    height: 100px;
+    margin-top: -52px;
   }
 }
 div.Text-About-Img:hover{
@@ -1725,6 +1735,11 @@ a.Fa_A_Phone{
     line-height: 30px;
   }
 }
+@media screen and (max-width: 600px){
+  a.Fa_A_Phone{
+    font-size: 17px;
+  }
+}
 a.Fa_A_Phone:hover{
   color:  var(--D8E4EB);
   text-decoration:underline ;
@@ -1733,6 +1748,9 @@ span.Fa-Phone{
   padding-right: 10px;
 }
 
+span.Red_Note{
+  color: red;
+}
 
 
 
