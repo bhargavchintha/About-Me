@@ -643,9 +643,31 @@ p.first{
 ::placeholder{
   color: #069;
 }
+h1.Display_Text{
+  display: none;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1490px){
+  h1.Display_Text{
+  display: block;
+} 
+}
+@media screen and (max-width: 1490px){
+  div.All_body{
+    display: none;
+  }
+}
+
 </style>
 <body>
-  <div class="one">
+  <div class="H1_Display">
+    <h1 class="Display_Text">
+      This web only Visible in Desktop Site and it should be 1490px
+    </h1>
+   </div>
+<div class="All_body">
+
+  <div class="one-1">
   <div class="one">
      <div class="img">
 <img src="Bharath_clg_images/bh-logo.jpg" height="90px" ></img>
@@ -862,6 +884,9 @@ BIHER Query Management System:
   </div>
   </div>
 </div>
+</div>
+
+
 </div>
 </body>
 </html>
