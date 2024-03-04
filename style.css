@@ -73,7 +73,9 @@ body{
   --Color:#000000d4;
   --background-Animation-black:url(Svg/Orange_Img_Svg.png)
 }
-
+html {
+  scroll-behavior: smooth;
+}
 *{
     margin: 0px;
     padding:0px;
@@ -1756,6 +1758,7 @@ span.Red_Note{
 a.ID-Index{
   text-decoration: none;
 }
+
 
 /*
 #BED6ED, like #D8E4EB
