@@ -135,7 +135,20 @@ div.Grid-1{
 display: flex;
 flex-wrap: wrap;
 align-items: center;
+animation: SidesGs 2s ease-in-out; 
+  transition: all 0.3s ease-in-out; 
+} 
+@keyframes SidesGs { 
+  0% { 
+    transform: translateX(-100%); 
+    opacity: 0; 
+  } 
+  100% { 
+    transform: translateX(0%); 
+    opacity: 1; 
+  } 
 }
+
 .Img-Src {
   width: 50px;
   height: auto; 
@@ -162,6 +175,18 @@ align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  animation: SideNav 2s ease-in-out; 
+  transition: all 0.3s ease-in-out; 
+} 
+@keyframes SideNav { 
+  0% { 
+    transform: translateX(100%); 
+    opacity: 0; 
+  } 
+  100% { 
+    transform: translateX(0%); 
+    opacity: 1; 
+  } 
 }
 
 a.NAV-Items{
@@ -220,10 +245,7 @@ a.NAV-Items:focus{
     display: flex;
   }
 
-  .Header-Files li {
-    width: 100%;
-    text-align: center;
-  }
+  
 
   .Header-Files a {
     width: 100%;
@@ -1758,7 +1780,48 @@ span.Red_Note{
 a.ID-Index{
   text-decoration: none;
 }
+.About-Img-MySlef,
+.Contant_Details_Width,
+.Clg-Project-Details-1{
+  overflow: hidden;
+}
+.Clg-Project-Details-1{
+  padding-bottom: 13px;
+}
 
+.Contant_Details_Width:hover .Grid_Contant-Details_Content-1,
+.Clg-Project-Details-1:hover  .Details-Project-1,
+.About-Img-MySlef:hover .About-Grid-1{
+  animation: SidesG 2s ease-in-out; 
+  transition: all 0.3s ease-in-out; 
+} 
+@keyframes SidesG { 
+  0% { 
+    transform: translateX(-100%); 
+    opacity: 0; 
+  } 
+  100% { 
+    transform: translateX(0%); 
+    opacity: 1; 
+  } 
+}
+.Contant_Details_Width:hover  .Grid_Contant-Details_Content-2,
+.Clg-Project-Details-1:hover  .Details-Project-2,
+.About-Img-MySlef:hover .About-Grid-2,
+.Grid-2{
+  animation: SideNav 2s ease-in-out; 
+  transition: all 0.3s ease-in-out; 
+} 
+@keyframes SideNav { 
+  0% { 
+    transform: translateX(100%); 
+    opacity: 0; 
+  } 
+  100% { 
+    transform: translateX(0%); 
+    opacity: 1; 
+  } 
+}
 
 /*
 #BED6ED, like #D8E4EB
