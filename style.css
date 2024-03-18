@@ -1790,7 +1790,7 @@ a.ID-Index{
   padding-bottom: 13px;
 }
 
-.Contant_Details_Width:hover .Grid_Contant-Details_Content-1,
+/* .Contant_Details_Width:hover .Grid_Contant-Details_Content-1, */
 .Clg-Project-Details-1:hover  .Details-Project-1,
 .About-Img-MySlef:hover .About-Grid-1{
   animation: SidesG 2s ease-in-out; 
@@ -1806,10 +1806,38 @@ a.ID-Index{
     opacity: 1; 
   } 
 }
-.Contant_Details_Width:hover  .Grid_Contant-Details_Content-2,
+/* .Contant_Details_Width:hover  .Grid_Contant-Details_Content-2, */
 .Clg-Project-Details-1:hover  .Details-Project-2,
 .About-Img-MySlef:hover .About-Grid-2,
 .Grid-2{
+  animation: SideNav 2s ease-in-out; 
+  transition: all 0.3s ease-in-out; 
+} 
+@keyframes SideNav { 
+  0% { 
+    transform: translateX(100%); 
+    opacity: 0; 
+  } 
+  100% { 
+    transform: translateX(0%); 
+    opacity: 1; 
+  } 
+}
+.Contant_Details_Width .Grid_Contant-Details_Content-1{
+  animation: SidesG 2s ease-in-out; 
+  transition: all 0.3s ease-in-out; 
+} 
+@keyframes SidesG { 
+  0% { 
+    transform: translateX(-100%); 
+    opacity: 0; 
+  } 
+  100% { 
+    transform: translateX(0%); 
+    opacity: 1; 
+  } 
+}
+.Contant_Details_Width .Grid_Contant-Details_Content-2{
   animation: SideNav 2s ease-in-out; 
   transition: all 0.3s ease-in-out; 
 } 

@@ -41,7 +41,7 @@
       </div>
       <div class="Grid-2">
         <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
-        <input id="menuTrigger" type="checkbox"  class="nav_I">
+        <input id="menuTrigger" type="checkbox"  class="nav_I" />
         <nav class="Header-Files">
           <button onclick="myFunction()" class="BUTNS Button_BTN " id="button" title="Change To Dark Mode"></button>
             <a class="NAV-Items a" href="#HOME">Home</a>
@@ -823,6 +823,20 @@
                  </div>
                </div>
              </div>
+             <script>
+              const connectContent = document.querySelector('.Grid_Contant-Details_Content-1');
+          
+              // Add event listener for hover-based animation
+              connectContent.addEventListener('mouseover', () => {
+                  connectContent.classList.add('show');
+              });
+          
+              // Remove 'show' class on mouseout (optional)
+              connectContent.addEventListener('mouseout', () => {
+                  connectContent.classList.remove('show');
+              });
+          </script>
+          
 
              <div class="Grid_Contant-Details_Content-2">
               <div class="Form_Details">
@@ -931,6 +945,27 @@
        </div>
     </div>
   </div>
+
+  <script>
+   document.addEventListener('DOMContentLoaded', function() {
+  const contentDetails = document.querySelector('.Contant_Details_Width');
+  let animationStarted = false;
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !animationStarted) {
+        contentDetails.classList.add('animation-start');
+        animationStarted = true;
+        observer.disconnect(); // Stop observing once animation has started
+      }
+    });
+  });
+
+  observer.observe(contentDetails);
+});
+
+
+  </script>
 
 
   <script>
