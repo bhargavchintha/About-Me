@@ -1920,10 +1920,52 @@ div.Form_Details_View{
   padding-top: 10px;
   padding-bottom: 20px;
   box-shadow: 0 0 8px var(--000);
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width:1100px) {
+  div.Form_Details_View{
+    width: 50%;
+  }
+}
+@media screen and (max-width:900px) {
+  div.Form_Details_View{
+    width: 60%;
+  }
+}
+@media screen and (max-width:750px) {
+  div.Form_Details_View{
+    width: 70%;
+  }
+}
+@media screen and (max-width:650px) {
+  div.Form_Details_View{
+    width: 80%;
+  }
+}
+@media screen and (max-width:500px) {
+  div.Form_Details_View{
+    width: 85%;
+  }
+}
+@media screen and (max-width:402px) {
+  div.Form_Details_View{
+    width: 88%;
+  }
+}
+@media screen and (max-width:400px) {
+  div.Form_Details_View{
+    width: 95%;
+  }
 }
 div.Form_Show_Data{
    width: 90%;
    margin: auto;
+   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width:400px) {
+  div.Form_Show_Data{
+    width: 95%;
+  }
 }
 .container_Symbol {
   display: flex;
@@ -2016,6 +2058,25 @@ button.Name_btn_Close:hover{
   background-color: var(--ffff);
   border: 1px solid var(--000);
 }
+#Fa_Btn_Close{
+  color: var(--ffff);
+}
+button.Name_btn_Close:hover #Fa_Btn_Close{
+  color: var(--000);
+  animation: bouncestep 1.5s linear;
+}
+
+@keyframes bouncestep {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translatey(-7px);
+  }
+  60% {
+    transform: translatey(-5px);
+  }
+}
 div.Close_Btn{
   position: relative;
 }
@@ -2025,11 +2086,32 @@ h3.Thanks_Say{
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
+@media screen and (max-width:550px) {
+  h3.Thanks_Say{
+    font-size: 20px;
+  }
+} 
+@media screen and (max-width:400px) {
+  h3.Thanks_Say{
+    font-size: 17px;
+  }
+} 
+  
 h5.Thanks_Hello{
   color:var(--000) ;
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-bottom: 15px;
+}
+@media screen and (max-width:550px) {
+  h5.Thanks_Hello{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width:400px) {
+  h5.Thanks_Hello{
+    font-size: 12px;
+  }
 }
 span.User_Name{
   font-weight: 600;
@@ -2038,11 +2120,12 @@ button.Btn_Home_Page{
   text-decoration: none;
   color: var(--000);
   background-color: var(--ffff);
-  padding: 5px 10px;
+  padding: 8px 10px;
   border: 1px solid var(--000);
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  font-size: 17px;
 }
 button.Btn_Home_Page:hover{
   color: var(--ffff);
