@@ -12,7 +12,8 @@
   margin: 0;
   padding: 0;
   font-family: poppines,sans-serif;
-  
+  scroll-behavior: smooth;
+
 }
 body{
 
@@ -288,7 +289,7 @@ div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  
+  transition: all 0.3s ease-in-out;
   }
 
 a.one:link{
@@ -426,6 +427,7 @@ img.one{
   font-size: 15px;
   transition: 0.4s;
   height: 50px;
+  transition: all 0.3s ease-in-out;
 }
 
 .active, .accordion:hover {
@@ -435,13 +437,26 @@ img.one{
 .panel {
   padding: 0 18px;
   display: none;
-  background-color:transparent;
+  background-color: transparent;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  animation: topbottom 1.5s forwards;
 }
+
+@keyframes topbottom {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 p.seven{
   color: white;
   font-size: 25px;
-
   margin-left: 10px;
   margin-bottom: 10px;
 

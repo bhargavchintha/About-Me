@@ -24,9 +24,7 @@
 
 </head>
 <body>
-  <div class="Under_work">
-    <h1 class="Under">Not Available Right Now</h1>
-  </div>
+  
   <div class="Hole-Body">
     
     
@@ -456,7 +454,7 @@
                                 <button class="back-btn" onclick="closeTab()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                               </div>
       
-                              <iframe class="WEb-Page_clg" src="Web Pages/Bharath_Collage_1.html" ></iframe>
+                              <iframe id="webPageFrame" class="WEb-Page_clg" src="Web Pages/Bharath_Collage_1.html" ></iframe>
                               
                             </div>
   
@@ -488,7 +486,7 @@
                                 <button class="back-btn" onclick="closeTab()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                               </div>
       
-                              <iframe class="WEb-Page_clg" src="Web Pages/Bharath_Collage_2.html" ></iframe>
+                              <iframe id="webPageFrame" class="WEb-Page_clg" src="Web Pages/Bharath_Collage_2.html" ></iframe>
                             </div>
   
                              <!--second (INNER PANEL)  Panel End Up Here -->
@@ -519,7 +517,7 @@
                                 <button class="back-btn" onclick="closeTab()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                               </div>
       
-                              <iframe class="WEb-Page_clg" src="Web Pages/Bharath_Collage_3.html" ></iframe>
+                              <iframe id="webPageFrame" class="WEb-Page_clg" src="Web Pages/Bharath_Collage_3.html" ></iframe>
                             </div>
   
                              <!--First (INNER PANEL)  Panel End Up Here -->
@@ -585,7 +583,7 @@
                                     <button class="back-btn" onclick="closeTab()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                                   </div>
           
-                                  <iframe class="WEb-Page_clg" src="Web Pages/Food_Images/Login.html" ></iframe>
+                                  <iframe id="webPageFrame" class="WEb-Page_clg" src="Web Pages/Food_Images/Login.html" ></iframe>
                                 </div>
       
                                  <!--second (INNER PANEL)  Panel End Up Here -->
@@ -616,7 +614,7 @@
                                     <button class="back-btn" onclick="closeTab()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
                                   </div>
           
-                                  <iframe class="WEb-Page_clg" src="Web Pages/Food_Images/Signup.html" ></iframe>
+                                  <iframe id="webPageFrame" class="WEb-Page_clg" src="Web Pages/Food_Images/Signup.html" ></iframe>
                                 </div>
       
                                  <!--second Grid Second (INNER PANEL)  Panel End Up Here -->
@@ -849,7 +847,7 @@
                         <label class="Input_Label" for="Name">Name:</label>
                       </div>
                       <div class="Name">
-                        <input type="text" placeholder="Enter Your Name" name="Name"  required />
+                        <input type="text"  id="Name" placeholder="Enter Your Name" name="Name"  required />
                       </div>
                        
                       <div class="Label">
@@ -880,13 +878,14 @@
                         </p>
                       </div>
                         <div class="Submit_BTN">
-                          <input type="submit" value="Submit"/>
+                          <input type="submit" id="submitButton" value="Submit"/>
                         </div>
 
                     </form>
                  </div>
               </div>
              </div>
+
 
           </div>
         </div>
@@ -946,154 +945,57 @@
     </div>
   </div>
 
-  <script>
-   document.addEventListener('DOMContentLoaded', function() {
-  const contentDetails = document.querySelector('.Contant_Details_Width');
-  let animationStarted = false;
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !animationStarted) {
-        contentDetails.classList.add('animation-start');
-        animationStarted = true;
-        observer.disconnect(); // Stop observing once animation has started
-      }
-    });
-  });
-
-  observer.observe(contentDetails);
-});
-
-
-  </script>
-
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const menuTrigger = document.getElementById('menuTrigger');
-    const navItems = document.querySelectorAll('.Header-Files .NAV-Items');
-    const menuIcon = document.querySelector('.nav_ico i');
-  
-    // Function to toggle menu icon
-    function toggleMenuIcon() {
-      if (menuIcon.classList.contains('fa-bars')) {
-        menuIcon.classList.remove('fa-bars');
-        menuIcon.classList.add('fa-times');
-      } else {
-        menuIcon.classList.remove('fa-times');
-        menuIcon.classList.add('fa-bars');
-      }
-    }
-  
-    
-    function closeMenu() {
-      if (window.innerWidth <= 900) {
-        menuTrigger.checked = false; 
-        if (menuIcon.classList.contains('fa-bars')) {
-          toggleMenuIcon(); 
-        }
-      }
-    }
-  
-  
-    menuIcon.addEventListener('click', toggleMenuIcon);
-  
-    navItems.forEach(item => {
-      item.addEventListener('click', function() {
-        closeMenu();
-        toggleMenuIcon(); 
-      });
-    });
-  });
-  
-  
-  </script>
-
-
-  <script>
-    document.getElementById("myForm").addEventListener("submit", function(event) {
-      event.preventDefault(); 
-  
-      
-      fetch(this.action, {
-        method: this.method,
-        body: new FormData(this)
-      })
-      .then(response => {
-        if (response.ok) {
-        
-          setTimeout(function() {
-            window.location.href = "index.html";
-          }, 1000);
-        } else {
-          
-          console.error('Form submission failed:', response.status);
-          
-        }
-      })
-      .catch(error => {
-        console.error('Error submitting form:', error);
-        
-      });
-    });
-  </script>
-
+<div class="None_Spinner">
+    <div class="Hover_Spin">
+      <div class="Hover_Spin_Round">
+          <div class="loader">
+           
+          </div>
+      </div>
+  </div>
 </div>
 
-<script>
- var acc = document.getElementsByClassName("Img-About-Web");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    var panel = this.querySelector(".panel");
-    
-    if (panel.style.display === "block") {
-      panel.style.display = "nne";
-    } else {
-      panel.style.display = "block";
-    }
-  });
+<div class="Form_Submit">
+   <div class="Form_Submit_Review">
+       <div class="Form_Details_View">
+            <div class="Close_Btn">
+              <button class="Name_btn_Close" id="closeButton" ><i class="fa fa-times"></i></button>
+            </div>
+           <div class="Form_Show_Data">
+              
+              <div class="container_Symbol">
+                <div class="tick-circle">
+                  <svg class="Svg_Cricle" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                    <circle class="path circle" fill="none" stroke="#30a82d" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+                    <polyline class="path check" fill="none" stroke="#30a82d" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                  </svg>
+                </div>
+              </div>
+              <div class="Matter_Details">
+                  <div class="Matter_Deatils_Show">
+                     <h3 class="Thanks_Say">
+                      Your submission was successful
+                     </h3>
+                     <h5 class="Thanks_Hello">
+                      Thank you <span class="User_Name" id="submittedName"></span>!
+                     </h5>
+                     <a class="Back_Home" href="index.html"><button class="Btn_Home_Page" ><i id="Back_Arrow_Btn" class="fa fa-arrow-left" aria-hidden="true"></i>Back To Home Page</button></a>
+                  </div>
+              </div>
+           </div>
+       </div>
+   </div>
+</div>
+</div>
+<script src="Script/Bars.js" ></script>
+<script src="Script/formdatasubmit.js" ></script>
+<script src="Script/Accordings.js"></script>
+<script src="Script/DarkMode.js"></script>
+<script src="Script/Darkmode_Localstorage.js" ></script>
+<script src="Script/Block.js"></script>
+<script src="Script/Ifamesreload.js" ></script>
+<script src="Script/Btn_Close.js"></script>
 
- 
-  var closeBtns = acc[i].querySelectorAll(".back-btn");
-  for (var j = 0; j < closeBtns.length; j++) {
-    closeBtns[j].addEventListener("click", function(event) {
-      event.stopPropagation(); 
-      var panel = this.closest(".panel");
-      panel.style.display = "none";
-    });
-  }
-}
-
-</script>
-<script>
-  // this is dark mode script
-  function myFunction() {
-       var element = document.body;
-       element.classList.toggle("dark-side");
-    }
-</script>
-<script>
-
-  window.onload = function() {
-  
-  const isDarkMode = localStorage.getItem("darkMode");
-  const element = document.body;
-
-  
-  if (isDarkMode === "true") {
-    element.classList.add("dark-side");
-  }
-};
-
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-side");
-
-  const isDarkMode = element.classList.contains("dark-side");
-  localStorage.setItem("darkMode", isDarkMode);
-}
-</script>
   </body>
 </html>
