@@ -2221,10 +2221,14 @@ button.Back_Top_Btn{
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   background-color: var(--ffff);
+  visibility: hidden;
 }
 button.Back_Top_Btn:hover{
   box-shadow: 0 0 8px var(--000);
   transform: scale(1.2);
+}
+button.Back_Top_Btn.show {
+  visibility: visible;
 }
 button.Back_Top_Btn:hover #UP_Arrow{
   animation: upbounce 2s forwards ease-in-out;

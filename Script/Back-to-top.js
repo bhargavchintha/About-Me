@@ -13,3 +13,9 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '500');
 });
 
+// Add this part to hide the button when already at the top
+$(document).ready(function() {
+  if ($(window).scrollTop() <= 0) {
+    btn.removeClass('show');
+  }
+});
