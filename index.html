@@ -12,15 +12,13 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<link rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
-
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
@@ -41,17 +39,18 @@
         <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
         <input id="menuTrigger" type="checkbox"  class="nav_I" />
         <nav class="Header-Files">
-          <button onclick="myFunction()" class="BUTNS Button_BTN " id="button" title="Change To Dark Mode"></button>
-            <a class="NAV-Items a" href="#HOME">Home</a>
+          <button onclick="myFunction()" class="BUTNSoran Button_BTN " id="button" title="Change To Dark Mode"></button>
+            <a class="NAV-Items a active" href="#Home">Home</a>
             <a class="NAV-Items b" href="#About">About</a>
             <a class="NAV-Items c" href="#Skills">Skills</a>
-            <a class="NAV-Items c" href="#Project">Projects</a>
-            <a class="NAV-Items d" href="#Contant">Contact</a>
+            <a class="NAV-Items d" href="#Project">Projects</a>
+            <a class="NAV-Items e" href="#Contant">Contact</a>
             <button onclick="myFunction()" class="BUTNS  Button_BTN " title="Change To Dark Mode"></button>
         </nav>
       </div>
     </header>
-    <div class="Gird-Curved" id="HOME" >
+
+    <div class="Gird-Curved  Section_Scroll" id="Home" >
       <div class="curved">
    
         <div class="Details-Grid">
@@ -103,7 +102,7 @@
         </div>
       </div>
       
-      <div id="About">
+      <div id="About"  class="Section_Scroll" >
         <div class="About-MySelf">
           <div class="About-Myself-1">
               <div class="Name-About">
@@ -153,8 +152,8 @@
 
 
     <!--Skills-->
-    <div class="About-BHA-Skills">
-      <div id="Skills" class="Skills-About-Me">
+    <div class="About-BHA-Skills ">
+      <div id="Skills" class="Skills-About-Me  Section_Scroll">
         <div class="Skills-About-My">
          <div class="Skills-About-Slef">
               <h1 class="Skills">SKILLS</h1>
@@ -331,7 +330,7 @@
 
     <!--Projects-->
   
-    <div id="Project" class="Clg-Project">
+    <div id="Project" class="Clg-Project  Section_Scroll "   >
       <div class="Clg-Project-About">
         <div class="Clg-Project-Skills">
             <h1 class="Project_Name">
@@ -798,7 +797,7 @@
     
   <!--Contact    Details   -->
   
-  <div id="Contant" class="Contact_Details">
+  <div id="Contant" class="Section_Scroll ">
     <div class="About-MySelf">
       <div class="About-Myself-1">
           <div class="Name-About">
@@ -891,7 +890,7 @@
         </div>
       </div>
     </div>
-  </div>
+ 
 
 
   <div class="Footer_Details">
@@ -915,7 +914,7 @@
 
                   <div class="Grid_Details_Flex_1">
                       <div class="Link_footer">
-                        <li class="List_links"><a class="Fotter_links" href="#HOME" >Home</a></li>
+                        <li class="List_links"><a class="Fotter_links" href="#Home" >Home</a></li>
                         <li class="List_links"><a class="Fotter_links" href="#About">About</a></li>
                         <li class="List_links"><a class="Fotter_links" href="#Skills" >Skills</a></li>
                         <li class="List_links"><a class="Fotter_links" href="#Project" >Projects</a></li>
@@ -944,6 +943,15 @@
        </div>
     </div>
   </div>
+
+</div>
+
+<!--Back to Top-->
+<div class="Back_Top">
+  <div class="Click_Back">
+    <button class="Back_Top_Btn" id="Top_Btn" ><i id="UP_Arrow" class="fa fa-arrow-up" aria-hidden="true"></i></button>
+  </div>
+</div>
 
 <div class="None_Spinner">
     <div class="Hover_Spin">
@@ -996,6 +1004,8 @@
 <!-- <script src="Script/Block.js"></script> -->
 <script src="Script/Ifamesreload.js" ></script>
 <script src="Script/Btn_Close.js"></script>
+<script src="Script/Active_links.js"></script>
+<script src="Script/Back-to-top.js"></script>
 
   </body>
 </html>
