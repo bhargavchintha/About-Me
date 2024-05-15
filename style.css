@@ -1838,9 +1838,9 @@ a.ID-Index{
   padding-bottom: 13px;
 }
 
-/* .Contant_Details_Width:hover .Grid_Contant-Details_Content-1, */
-.Clg-Project-Details-1:hover  .Details-Project-1,
-.About-Img-MySlef:hover .About-Grid-1{
+/* .Contant_Details_Width:hover .Grid_Contant-Details_Content-1, 
+ .About-Img-MySlef:hover .About-Grid-1 { 
+  {
   animation: SidesG 2s ease-in-out; 
   transition: all 0.3s ease-in-out; 
 } 
@@ -1853,10 +1853,10 @@ a.ID-Index{
     transform: translateX(0%); 
     opacity: 1; 
   } 
-}
-/* .Contant_Details_Width:hover  .Grid_Contant-Details_Content-2, */
+}*/
+/* .Contant_Details_Width:hover  .Grid_Contant-Details_Content-2, 
+/* .About-Img-MySlef:hover .About-Grid-2 
 .Clg-Project-Details-1:hover  .Details-Project-2,
-.About-Img-MySlef:hover .About-Grid-2,
 .Grid-2{
   animation: SideNav 2s ease-in-out; 
   transition: all 0.3s ease-in-out; 
@@ -1898,7 +1898,7 @@ a.ID-Index{
     transform: translateX(0%); 
     opacity: 1; 
   } 
-}
+}*/
 div.None_Spinner{
   display: none;
 }
@@ -2244,6 +2244,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
     transform: translateY(-5px);
   }
 }
+
 /*
 #BED6ED, like #D8E4EB
 
