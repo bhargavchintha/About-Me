@@ -1367,6 +1367,7 @@ div.About-Web-Grid {
   grid-template-columns: auto auto auto;
   gap: 20px; 
   overflow: hidden;
+
 }
 @media screen and (max-width: 1200px){
   div.About-Web-Grid{
@@ -1528,6 +1529,7 @@ div.panel{
   height: 100%; 
   overflow: auto; 
   background-color: var(--ffffffdb);
+  
   }
   div.Btn-Close-Clg{
     position: absolute;
@@ -2282,20 +2284,20 @@ button.Back_Top_Btn:hover #UP_Arrow{
 
 .animation_Skills .Skills-About-Slef {
   opacity: 0;
-  transform: translateY(-50px); /* Start offscreen */
+  transform: translateY(-50px);
   transition: opacity 1s, transform 1s;
 }
 
 .animation_Skills .Img-Skills {
   opacity: 0;
-  transform: translateX(-150px); /* Start offscreen */
+  transform: translateX(-150px); 
   transition: opacity 1s, transform 1s;
 }
 
 .animation_Skills.animate .Skills-About-Slef,
 .animation_Skills.animate .Img-Skills {
   opacity: 1;
-  transform: translateY(0) translateX(0); /* Move to original position */
+  transform: translateY(0) translateX(0); 
 }
 
 
@@ -2319,22 +2321,20 @@ button.Back_Top_Btn:hover #UP_Arrow{
 }
 .animation_project .Design_web_project {
   opacity: 0;
-  transform: translatey(-50px); 
-  transition: opacity 1s, transform 1s;
 }
 .animation_project .About-Web {
   opacity: 0;
-  transform: translatey(150px); 
-  transition: opacity 1s, transform 1s;
 }
 
 .animation_project.animate .Clg-Project-Skills,
 .animation_project.animate .Details-Project-1,
-.animation_project.animate .Details-Project-2,
+.animation_project.animate .Details-Project-2 {
+  opacity: 1;
+  transform: translateY(0) translateX(0); 
+}
 .animation_project.animate .Design_web_project,
 .animation_project.animate .About-Web {
   opacity: 1;
-  transform: translateY(0) translateX(0); 
 }
 
 
