@@ -102,7 +102,7 @@
         </div>
       </div>
       
-      <div id="About"  class="Section_Scroll" >
+      <div id="About"  class="Section_Scroll   animation_Scroll " >
         <div class="About-MySelf">
           <div class="About-Myself-1">
               <div class="Name-About">
@@ -149,26 +149,26 @@
       </div>
     </div>
 
-
+<div class="About-MY-Self-1">
+  <div class="About-Image-Left">
+    <div class="About-Image-Left-Side">
+      <!--<img  class="Svg-Left-Img" src="Svg-Left-Side_Img.png" />-->
+    </div>
+    <div class="About-Image-Right">
+      <div class="About-Image-Right-Side">
+        <!--<img class="Svg-Right-Img"  src="Svg-Right-Side.png" />-->
+      </div>
+    </div>
+  </div>
 
     <!--Skills-->
     <div class="About-BHA-Skills ">
-      <div id="Skills" class="Skills-About-Me  Section_Scroll">
+      <div id="Skills" class="Skills-About-Me  Section_Scroll  animation_Skills">
         <div class="Skills-About-My">
          <div class="Skills-About-Slef">
               <h1 class="Skills">SKILLS</h1>
          </div>
-         <div class="About-MY-Self-1">
-          <div class="About-Image-Left">
-            <div class="About-Image-Left-Side">
-              <!--<img  class="Svg-Left-Img" src="Svg-Left-Side_Img.png" />-->
-            </div>
-            <div class="About-Image-Right">
-              <div class="About-Image-Right-Side">
-                <!--<img class="Svg-Right-Img"  src="Svg-Right-Side.png" />-->
-              </div>
-            </div>
-          </div>
+         
          <!--Html5 -->
 
          <div class="Img-Skills">
@@ -330,7 +330,7 @@
 
     <!--Projects-->
   
-    <div id="Project" class="Clg-Project  Section_Scroll "   >
+    <div id="Project" class="Clg-Project  Section_Scroll   animation_project "   >
       <div class="Clg-Project-About">
         <div class="Clg-Project-Skills">
             <h1 class="Project_Name">
@@ -361,7 +361,7 @@
                         Implemented in python, to enhance <abbr class="About_DDOS" title="Distributed Denial-of-Service ">DDOS</abbr>  detection within a taxonomy-based framework.
                        </p>
                        <div class="Download-Project-Btn">
-                        <a  class="Download-Project" href="Projects/Semi-Supervised Machine Learning Approach For DDOS Detection.pdf" download >About Project</a>
+                        <a  class="Download-Project" href="Projects/Semi-Supervised Machine Learning Approach For DDOS Detection.pdf" download ><button class="Download_Project_Btn">Read More</button></a>
                        </div>
                      </div>
                    </div>
@@ -386,7 +386,7 @@
                         Implemented Python program for encryption/decryption using substitution ciphers, employing dictionaries for mapping, string manipulation, user input handling, and error handling.
                        </p>
                        <div class="Download-Project-En">
-                        <a class="Download-Project" href="Projects/Encryption and Decryption Ensuring Digital Privacy and Security.pdf" download >About Project</a>
+                        <a class="Download-Project" href="Projects/Encryption and Decryption Ensuring Digital Privacy and Security.pdf" download ><button class="Download_Project_Btn">Read More</button></a>
                        </div>
                     </div>
                   </div>
@@ -795,9 +795,9 @@
     </div>
 
     
-  <!--Contact    Details   -->
+  <!--Contact Details   -->
   
-  <div id="Contant" class="Section_Scroll ">
+  <div id="Contant" class="Section_Scroll  animate_contant  ">
     <div class="About-MySelf">
       <div class="About-Myself-1">
           <div class="Name-About">
@@ -815,25 +815,11 @@
                     Connect Me
                    </h1>
                    <p class="Submit_Details">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connect Me, Let's discuss about this project and iam happy to share my thoughths.
+                    <span class="Display_Block" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Connect Me, Let's discuss about this project and iam happy to share my thoughths.
                    </p>
                  </div>
                </div>
              </div>
-             <script>
-              const connectContent = document.querySelector('.Grid_Contant-Details_Content-1');
-          
-              // Add event listener for hover-based animation
-              connectContent.addEventListener('mouseover', () => {
-                  connectContent.classList.add('show');
-              });
-          
-              // Remove 'show' class on mouseout (optional)
-              connectContent.addEventListener('mouseout', () => {
-                  connectContent.classList.remove('show');
-              });
-          </script>
-          
 
              <div class="Grid_Contant-Details_Content-2">
               <div class="Form_Details">
@@ -860,7 +846,7 @@
                         <label class="Input_Label" for="Name">PhoneNo:</label>
                       </div>
                       <div class="Name">
-                        <input type="number" placeholder="Enter Your Phone Number" name="PhoneNo" required />
+                        <input type="number" placeholder="Enter Your Phone Number" name="PhoneNo"  required />
                       </div>
 
                       <div class="Label">
@@ -890,7 +876,7 @@
         </div>
       </div>
     </div>
- 
+  </div> 
 
 
   <div class="Footer_Details">
@@ -944,7 +930,7 @@
     </div>
   </div>
 
-</div>
+
 
 <!--Back to Top-->
 <div class="Back_Top">
@@ -1006,6 +992,10 @@
 <script src="Script/Btn_Close.js"></script>
 <script src="Script/Active_links.js"></script>
 <script src="Script/Back-to-top.js"></script>
+<script src="Script/About_Animation.js" ></script>
+<script src="Script/Skills_Animation.js" ></script>
+<script src="Script/Project_Animation.js" ></script>
+<script src="Script/Contant_Animation.js" ></script>
 
   </body>
 </html>
