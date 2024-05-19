@@ -8,7 +8,6 @@
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Styles.css">
     <title> sign-up | TruYum Restaurant</title>
     
 </head>
@@ -834,7 +833,7 @@ div.Option1{
       
 
                   <script>
- // Get references to the select elements and text input fields
+
 const option1Select = document.getElementById("option1");
 const option2Select = document.getElementById("option2");
 const option3Select = document.getElementById("option3");
@@ -842,18 +841,18 @@ const option1Input = document.getElementsByName("option1_input");
 const option2Input = document.getElementsByName("option2_input");
 const option3Input = document.getElementsByName("option3_input");
 
-// Add event listeners to the select elements to update options when changed
+
 option1Select.addEventListener("change", updateOptions);
 option2Select.addEventListener("change", updateOptions);
 option3Select.addEventListener("change", updateOptions);
 
 function updateOptions() {
-  // Get the selected values
+ 
   const option1 = option1Select.value;
   const option2 = option2Select.value;
   const option3 = option3Select.value;
 
-  // Hide previously selected options in all three select elements
+  
   const options = [option1, option2, option3];
   const optionInputs = [option1Select, option2Select, option3Select];
   
@@ -878,7 +877,7 @@ function updateOptions() {
     }
   }
   
-  // Clear the value and text input for any select element that matches another select element
+  
   if (option1 === option2 && option1 !== "") {
     option2Select.value = "";
     option2Input.value = "";
@@ -954,24 +953,25 @@ function updateOptions() {
   
   
   
-  <script >
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const cookieContainer = document.querySelector(".cookie-container");
+            const cookieButton = document.querySelector(".cookie-btn");
         
-        const cookieContainer = document.querySelector(".cookie-container");
-        const cookieButton = document.querySelector(".cookie-btn");
+            cookieButton.addEventListener("click", () => {
+              cookieContainer.classList.remove("active");
         
-    cookieButton.addEventListener("click", () => {
-    cookieContainer.classList.remove("active");
-    
-    localStorage.setItem("_grecaptcha(done by bhargav)",  "09AINsHFc2uoI1NI35z0ref-oSZUuZUxeHb6E2g-zYQ7VS7l6GUozDM2ZnCgQ2BeiDsDMeZirZK2p5cOPVMKflDc0",);
-    });
-    
-    
-    setTimeout(() => {
-    if (!localStorage.getItem("_grecaptcha(done by bhargav)")) {
-      cookieContainer.classList.add("active");
-    }
-    }, 100);
-      </script>
+              localStorage.setItem("_grecaptcha(done by bhargav)", "09AINsHFc2uoI1NI35z0ref-oSZUuZUxeHb6E2g-zYQ7VS7l6GUozDM2ZnCgQ2BeiDsDMeZirZK2p5cOPVMKflDc0");
+            });
+        
+            setTimeout(() => {
+              if (!localStorage.getItem("_grecaptcha(done by bhargav)")) {
+                cookieContainer.classList.add("active");
+              }
+            }, 100);
+          });
+        </script>
+        
   
   
 
