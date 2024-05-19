@@ -2364,10 +2364,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
 }
 
 
-/* @media screen and (max-width:1100px) {
-  .animation_Scroll .About-Myself-1,
-.animation_Scroll .About-Grid-1,
-.animation_Scroll .About-Grid-2, 
+@media screen and (max-width:1100px) {
 .animation_Skills .Skills-About-Slef,
 .animation_Skills .Img-Skills,
   .animation_project .Clg-Project-Skills,
@@ -2387,7 +2384,27 @@ transition: opacity 1s, transform 1s;
 .animation_project .About-Web{
   opacity: 1;
 }
-} */
+}
+
+@media screen and (max-width:1100px) {
+  .animation_Scroll .About-Myself-1 {
+    opacity: 1;
+    transform: translateY(-50px); 
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .animation_Scroll .About-Grid-1 {
+    opacity: 1;
+    transform: translateX(-150px); 
+    transition: opacity 1s, transform 1s;
+  }
+  
+  .animation_Scroll .About-Grid-2 {
+    opacity: 1;
+    transform: translatex(150px); 
+    transition: opacity 1s, transform 1s;
+  } 
+}
 
 /*
 #BED6ED, like #D8E4EB
