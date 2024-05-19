@@ -1521,7 +1521,7 @@ div.Image-Upload-Web:hover div.Text-About-Img {
 div.panel{
   display: none; 
   position: fixed; 
-  z-index: 1; 
+  z-index: 9999999; 
   padding-top: 80px;
   left: 0;
   top: 0;
@@ -2209,7 +2209,7 @@ animation: bounce 1.5s linear;
 
 div.Back_Top{
   position: fixed;
-  z-index: 9999999;
+  z-index: 999;
   bottom: 0%;
   right: 0%;
   margin-right: 2%;
