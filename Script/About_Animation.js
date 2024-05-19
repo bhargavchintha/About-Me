@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const AboutSection = document.getElementById('About');
 
-    // Function to check if an element is in viewport
+   
     function isInViewport(element, offset = 0) {
         const rect = element.getBoundingClientRect();
         return (
