@@ -2364,7 +2364,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
 }
 
 
-@media screen and (max-width:1100px) {
+/* @media screen and (max-width:1100px) {
 .animation_Skills .Skills-About-Slef,
 .animation_Skills .Img-Skills,
   .animation_project .Clg-Project-Skills,
@@ -2378,7 +2378,7 @@ opacity: 1;
 transform: translatex(0px); 
 transition: opacity 1s, transform 1s;
 }
-}
+} */
 @media screen and (max-width:1100px){
 .animation_project .Design_web_project,
 .animation_project .About-Web{
@@ -2388,9 +2388,17 @@ transition: opacity 1s, transform 1s;
 
 @media screen and (max-width:1100px) {
   .animation_Scroll .About-Myself-1 {
-    opacity: 1;
-    transform: translateY(-50px); 
-    transition: opacity 1s, transform 1s;
+   animation: topdown 1.5s ease-in-out;
+  }
+  @keyframes movieEffect {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
   
   .animation_Scroll .About-Grid-1 {
