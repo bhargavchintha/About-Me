@@ -2404,6 +2404,12 @@ transition: opacity 1s, transform 1s;
     transform: translatex(150px); 
     transition: opacity 1s, transform 1s;
   } 
+  .animation_Scroll.animate .About-Myself-1,
+.animation_Scroll.animate .About-Grid-1,
+.animation_Scroll.animate .About-Grid-2 {
+  opacity: 1;
+  transform: translateY(0) translateX(0); 
+}
 }
 
 /*
