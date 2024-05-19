@@ -2383,19 +2383,19 @@ transition: opacity 1s, transform 1s;
 
   .animation_Scroll .About-Myself-1 {
     opacity: 1;
-    transform: translateY(-50px); 
+    transform: translateY(-0px); 
     transition: opacity 1s, transform 1s;
   }
   
   .animation_Scroll .About-Grid-1 {
     opacity: 1;
-    transform: translateX(-150px); 
+    transform: translateX(-0px); 
     transition: opacity 1s, transform 1s;
   }
   
   .animation_Scroll .About-Grid-2 {
     opacity: 1;
-    transform: translatex(150px); 
+    transform: translatex(0px); 
     transition: opacity 1s, transform 1s;
   }
 
