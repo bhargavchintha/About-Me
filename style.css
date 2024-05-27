@@ -1141,7 +1141,6 @@ div.Html-Progress-Bar-Per-1 {
   background-color: var(--0358a8);
   color: white;
   margin-top: 5px;
-  padding: 0.7%;
   text-align: right;
   font-size: 0px;
   border-radius: 15px;
@@ -1150,16 +1149,20 @@ div.Html-Progress-Bar-Per-1 {
   top: 0;
   left: 0; 
   transition: 0.3s all ease-in-out;
+  height: 8px;
 }
 div.Html-Image-About{
   cursor: pointer;
 }
 
-div.Html-Image-About:hover div.Html-Progress-Bar-Per-1 {
+.animation_Skills div.Html-Progress-Bar-Per-1 {
   width: 0%;
-  animation: fillEffect 2s ease-in-out forwards; 
   cursor: pointer;
   transition: 0.3s all ease-in-out;
+}
+
+.animation_Skills.animate div.Html-Progress-Bar-Per-1 {
+  animation: fillEffect 2s ease-in-out forwards; 
 }
 
 @keyframes fillEffect {
@@ -1170,6 +1173,11 @@ div.Html-Image-About:hover div.Html-Progress-Bar-Per-1 {
     width: 100%;
   }
 }
+ @media screen and (max-width:1100px) {
+  .animation_Skills div.Html-Progress-Bar-Per-1{
+    animation: fillEffect 2s ease-in-out forwards; 
+  }
+ }
 div.Css-3{
   margin-top: 30px;
 }
@@ -1205,7 +1213,7 @@ div.Clg-Project-Skills {
 
 div.Clg-Project-Skills::after {
   content: '';
-  width: 90px;
+  width: 110px;
   height: 4px;
   border-radius: 5px;
   background: var(--bed6edOR);
@@ -1216,7 +1224,7 @@ div.Clg-Project-Skills::after {
   transition: 0.3s all ease-in-out;
 }
 div.Clg-Project-About:hover div.Clg-Project-Skills::after {
-  width: 110px;
+  width: 163px;
   transition: 0.3s all ease-in-out;
 }
 
@@ -1338,7 +1346,7 @@ div.Web_Projects{
 
 div.Web_Projects-Design::after {
   content: '';
-  width: 100px;
+  width: 160px;
   height: 4px;
   border-radius: 5px;
   background: var(--bed6edOR);
@@ -1349,7 +1357,7 @@ div.Web_Projects-Design::after {
   transition: 0.3s all ease-in-out;
 }
 div.Design_web_project:hover div.Web_Projects-Design::after {
-  width: 170px;
+  width: 245px;
   transition: 0.3s all ease-in-out;
 }
 div.About-Web {
@@ -1909,6 +1917,31 @@ a.ID-Index{
     opacity: 1; 
   } 
 }*/
+div.Name-About_Contant{
+  text-align: center;
+  color: var(--013B72Black);
+  padding-bottom: 5px; 
+  position: relative;
+  transition: 0.3s all ease-in-out;
+  margin-top: 50px;
+}
+
+div.Name-About_Contant::after {
+  content: '';
+  width: 110px;
+  height: 4px;
+  border-radius: 5px;
+  background: var(--bed6edOR);
+  position: absolute;
+  bottom: -1%;
+  left: 50%; 
+  transform: translateX(-50%);
+  transition: 0.3s all ease-in-out;
+}
+div.About-MySelf_Contant:hover div.Name-About_Contant::after {
+  width: 145px;
+  transition: 0.3s all ease-in-out;
+}
 div.None_Spinner{
   display: none;
 }
@@ -2338,7 +2371,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
 }
 
 
-.animate_contant .Name-About {
+.animate_contant .Name-About_Contant {
   opacity: 0;
   transform: translateY(-50px); 
   transition: opacity 1s, transform 1s;
@@ -2356,7 +2389,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
   transition: opacity 1s, transform 1s;
 }
 
-.animate_contant.animate .Name-About,
+.animate_contant.animate .Name-About_Contant,
 .animate_contant.animate .Grid_Contant-Details_Content-1,
 .animate_contant.animate .Grid_Contant-Details_Content-2 {
   opacity: 1;
@@ -2370,7 +2403,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
   .animation_project .Clg-Project-Skills,
 .animation_project .Details-Project-1,
 .animation_project .Details-Project-2,
-  .animate_contant .Name-About,
+  .animate_contant .Name-About_Contant,
 .animate_contant .Grid_Contant-Details_Content-1,
 .animate_contant .Grid_Contant-Details_Content-2 
 {
@@ -2450,6 +2483,102 @@ transition: opacity 1s, transform 1s;
   }
 }
 
+div.Under_Matter_Design{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+h1.About-Name_Under{
+  color: #cccccc52;
+  font-size: 100px;
+  position: absolute;
+  margin-top: 40px;
+  z-index: -1;
+  overflow: hidden;
+}
+h1.Name_Under_Skills{
+  color: #cccccc52;
+  font-size: 100px;
+  position: absolute;
+  margin-top: 40px;
+  z-index: -1;
+  overflow: hidden;
+}
+h1.Name_Under_PROJECT{
+  color: #cccccc52;
+  font-size: 100px;
+  position: absolute;
+  margin-top: 40px;
+  z-index: -1;
+  overflow: hidden;
+}
+h1.Name_Under_web_PROJECT{
+  color: #cccccc52;
+  font-size: 100px;
+  position: absolute;
+  margin-top: 40px;
+  z-index: -1;
+  overflow: hidden;
+}
+h1.Name_Under_Contant{
+  color: #cccccc52;
+  font-size: 100px;
+  position: absolute;
+  margin-top: 40px;
+  z-index: -1;
+  overflow: hidden;
+}
+@media screen and (max-width:1100px) {
+  h1.About-Name_Under{
+    font-size: 70px;
+  }
+  h1.Name_Under_Skills{
+    font-size: 70px;
+  }
+  h1.Name_Under_PROJECT{
+    font-size: 70px;
+  }
+  h1.Name_Under_web_PROJECT{
+    font-size: 70px;
+  }
+  h1.Name_Under_Contant{
+    font-size: 70px;
+  }
+}
+@media screen and (max-width:600px) {
+  h1.Name_Under_web_PROJECT{
+    font-size: 60px;
+  }
+}
+@media screen and (max-width:500px) {
+  h1.Name_Under_web_PROJECT{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width:350px) {
+   h1.About-Name_Under{
+    font-size: 70px;
+    word-break: break-all;
+  }
+  h1.Name_Under_Skills{
+    font-size: 70px;
+    word-break: break-all;
+  }
+  h1.Name_Under_PROJECT{
+    font-size: 70px;
+    word-break: break-all;
+  }
+  h1.Name_Under_web_PROJECT{
+    font-size: 70px;
+    word-break: break-all;
+  }
+  h1.Name_Under_Contant{
+    font-size: 70px;
+    word-break: break-all;
+  }
+}
 /*
 #BED6ED, like #D8E4EB
 
