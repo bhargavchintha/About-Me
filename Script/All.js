@@ -48,6 +48,12 @@ document.addEventListener("DOMContentLoaded", function() {
             link.classList.remove("active");
             if (link.getAttribute("href").substring(1) === current) {
                 link.classList.add("active");
+
+                // Trigger the animation for the active section
+                const activeSection = document.getElementById(current);
+                if (activeSection) {
+                    activeSection.classList.add('animate');
+                }
             }
         });
     }
@@ -66,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add scroll event listener
     window.addEventListener('scroll', debouncedHandleScroll);
-    
+
     // Debounce function
     function debounce(func, wait = 20, immediate = true) {
         let timeout;

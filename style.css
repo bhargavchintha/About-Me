@@ -1073,7 +1073,6 @@ div.Html-Image-About{
 @media screen and (max-width: 400px){
   div.Skills-About-My{
     width: 90%;
-    margin-left: 20px;
   }
 }
 
@@ -2580,6 +2579,9 @@ h1.Name_Under_Contant{
     word-break: break-all;
   }
 }
+
+
+
 /*
 #BED6ED, like #D8E4EB
 
