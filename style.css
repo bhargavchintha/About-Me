@@ -2399,7 +2399,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
 }
 /* Contant Css end Here  */
 
-/* @media screen and (max-width:1100px) {
+@media screen and (max-width:1100px) {
 .animation_Skills .Skills-About-Slef,
 .animation_Skills .Img-Skills,
   .animation_project .Clg-Project-Skills,
@@ -2483,7 +2483,7 @@ transition: opacity 1s, transform 1s;
       opacity: 1;
     }
   }
-} */
+}
 
 div.Under_Matter_Design{
   display: flex;
