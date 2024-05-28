@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const divs = document.querySelectorAll(".Section_Scroll");
     const navLinks = document.querySelectorAll("nav a.NAV-Items");
 
-    function isInViewport(element, offset = 0) {
+    function isInViewport(element, offset = 20) {
         const rect = element.getBoundingClientRect();
         return (
             rect.top >= -offset &&

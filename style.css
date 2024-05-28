@@ -2435,75 +2435,77 @@ div.animation_About.animate .About-Grid-2 {
 
 /* Project Animation start here */
 
-.animation_project .Clg-Project-Skills{
-  opacity: 0;
-  transform: translateY(-50px); 
+.animation_Project .Clg-Project-Skills {
+  opacity: 1;
+  /* transform: translateY(-50px);  */
   transition: opacity 1s, transform 1s;
 }
 
-.animation_project .Details-Project-1 {
-  opacity: 0;
-  transform: translateX(-150px); 
+.animation_Project .Details-Project-1 {
+  opacity: 1;
+  /* transform: translateX(-150px);  */
   transition: opacity 1s, transform 1s;
 }
 
-.animation_project .Details-Project-2 {
-  opacity: 0;
-  transform: translatex(150px); 
+.animation_Project .Details-Project-2 {
+  opacity: 1;
+  /* transform: translateX(150px);  */
   transition: opacity 1s, transform 1s;
 }
-.animation_project .Design_web_project {
-  opacity: 0;
-}
+
+.animation_project .Design_web_project,
 .animation_project .About-Web {
-  opacity: 0;
-}
+  opacity: 1;
+  transition: opacity 1s;
+} 
 
-.animation_project.animate .Clg-Project-Skills,
-.animation_project.animate .Details-Project-1,
-.animation_project.animate .Details-Project-2 {
+.animation_Project.animate .Clg-Project-Skills,
+.animation_Project.animate .Details-Project-1,
+.animation_Project.animate .Details-Project-2 {
   opacity: 1;
   transform: translateY(0) translateX(0); 
 }
-.animation_project.animate .Design_web_project,
+
+/* .animation_project.animate .Design_web_project,
 .animation_project.animate .About-Web {
   opacity: 1;
-}
+} */
+
+
+
 
 /* Project Animation End here */
 
 /* Contant animation start here */
 
-.animate_contant .Name-About_Contant {
+.animation_Contact .Name-About_Contant {
   opacity: 0;
   transform: translateY(-50px); 
   transition: opacity 1s, transform 1s;
 }
 
-.animate_contant .Grid_Contant-Details_Content-1 {
+.animation_Contact .Grid_Contant-Details_Content-1 {
   opacity: 0;
   transform: translateX(-150px); 
   transition: opacity 1s, transform 1s;
 }
 
-.animate_contant .Grid_Contant-Details_Content-2 {
+.animation_Contact .Grid_Contant-Details_Content-2 {
   opacity: 0;
   transform: translatex(150px); 
   transition: opacity 1s, transform 1s;
 }
 
-.animate_contant.animate .Name-About_Contant,
-.animate_contant.animate .Grid_Contant-Details_Content-1,
-.animate_contant.animate .Grid_Contant-Details_Content-2 {
+.animation_Contact.animate .Name-About_Contant,
+.animation_Contact.animate .Grid_Contant-Details_Content-1,
+.animation_Contact.animate .Grid_Contant-Details_Content-2 {
   opacity: 1;
   transform: translateY(0) translateX(0); 
 }
 
 /* Contant Animation End here */
 
-#About, #Skills, #Project, #Contant {
-  position: relative;
-}
+
 
 
 /*
