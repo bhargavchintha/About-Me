@@ -12,7 +12,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         );
     }
 
-
     window.addEventListener('scroll', () => {
         let current = "";
 
@@ -22,7 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 current = div.getAttribute("id");
             }
 
-          
+            // Add animation class if the div is in the viewport
             if (isInViewport(div, 100)) {
                 div.classList.add('animate');
             }
@@ -36,7 +35,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 
-    
+    // Initial check to add animation class to elements already in viewport
     divs.forEach((div) => {
         if (isInViewport(div, 100)) {
             div.classList.add('animate');
