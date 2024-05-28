@@ -1067,11 +1067,9 @@ div.Html-Image-About{
 }
 @media screen and (max-width: 550px){
   div.Skills-About-My{
-    width: 70%;
-    margin-left: 50px;
+    width: 80%;
   }
 }
-
 
 div.Skills-About-Slef {
   text-align: center;
