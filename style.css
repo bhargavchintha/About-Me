@@ -1065,10 +1065,15 @@ div.Html-Image-About{
   margin: auto;
   position: relative;
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 550px){
   div.Skills-About-My{
     width: 80%;
-    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  div.Skills-About-My{
+   margin-left: 40px;
   }
 }
 
