@@ -1071,11 +1071,11 @@ div.Html-Image-About{
   }
 }
 
-@media screen and (max-width: 480px){
+/* @media screen and (max-width: 480px){
   div.Skills-About-My{
    margin-left: 40px;
   }
-}
+} */
 
 div.Skills-About-Slef {
   text-align: center;
