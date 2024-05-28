@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     // Initial check to add animation class to elements already in viewport
     divs.forEach((div) => {
-        if (isInViewport(div, 150)) {
+        if (isInViewport(div, 100)) {
             div.classList.add('animate');
         }
     });

@@ -1066,6 +1066,21 @@ div.Html-Image-About{
   margin: auto;
   position: relative;
 }
+@media screen and (max-width: 550px){
+  div.Skills-About-My{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px){
+  div.Skills-About-My{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px){
+  div.Skills-About-My{
+    width: 90%;
+  }
+}
 
 div.Skills-About-Slef {
   text-align: center;
@@ -2572,7 +2587,7 @@ h1.Name_Under_Contant{
   }
 }
 
-/* About Animation start here */
+
 div.animation_About .Name-About {
   opacity: 0;
   transform: translateY(-50px);
@@ -2594,49 +2609,6 @@ div.animation_About.animate .About-Grid-2 {
   opacity: 1;
   transform: translateY(0);
 }
-@media screen and (max-width:400px) {
-  div.animation_About .Name-About {
-    opacity: 0;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    animation: topdownabout 1s forwards ease-in-out;
-  }
-  @keyframes  topdownabout {
-    0%{
-      transform: translateY(-50px);
-    }
-    100%{
-      transform: translateY(0px);
-    }
-  }
-  div.animation_About .About-Grid-1 {
-    opacity: 0;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    animation: lefttorightabout 1s forwards ease-in-out;
-  }
-  @keyframes  lefttorightabout {
-    0%{
-      transform: translatex(-150px);
-    }
-    100%{
-      transform: translateY(0px);
-    }
-  }
-  div.animation_About .About-Grid-2 {
-    opacity: 0;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    animation: righttoleftabout 1s forwards ease-in-out;
-  }
-  @keyframes  righttoleftabout {
-    0%{
-      transform: translatex(150px);
-    }
-    100%{
-      transform: translateY(0px);
-    }
-  }
-}
-
-/* About Animation end here */
 
 /* Skills Animation Start Here */
 div.animation_Skills .Skills-About-Slef {
@@ -2656,6 +2628,9 @@ div.animation_Skills.animate .Skills_Tags_Dis {
 }
 
 /* Skills Animation end here */
+
+
+
 
 
 #About, #Skills, #Project, #Contant {
