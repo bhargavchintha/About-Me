@@ -1067,17 +1067,7 @@ div.Html-Image-About{
 }
 @media screen and (max-width: 550px){
   div.Skills-About-My{
-    width: 90%;
-  }
-}
-@media screen and (max-width: 480px){
-  div.Skills-About-My{
-    width: 100%;
-  }
-}
-@media screen and (max-width: 400px){
-  div.Skills-About-My{
-    width: 90%;
+    width: 80%;
   }
 }
 
