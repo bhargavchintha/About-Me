@@ -1159,24 +1159,6 @@ div.Html-Image-About{
   cursor: pointer;
 }
 
-.animation_Skills div.Html-Progress-Bar-Per-1 {
-  width: 0%;
-  cursor: pointer;
-  transition: 0.3s all ease-in-out;
-}
-
-.animation_Skills.animate div.Html-Progress-Bar-Per-1 {
-  animation: fillEffect 2s ease-in-out forwards; 
-}
-
-@keyframes fillEffect {
-  0% {
-    width: 0; 
-  }
-  100% {
-    width: 100%;
-  }
-}
  @media screen and (max-width:1100px) {
   .animation_Skills div.Html-Progress-Bar-Per-1{
     animation: fillEffect 2s ease-in-out forwards; 
@@ -2292,204 +2274,6 @@ button.Back_Top_Btn:hover #UP_Arrow{
   }
 }
 
-/* About Css Start Here  
-
-.animation_Scroll .About-Myself-1 {
-  opacity: 0;
-  transform: translateY(-50px); 
-  transition: opacity 1s, transform 1s;
-}
-
-.animation_Scroll .About-Grid-1 {
-  opacity: 0;
-  transform: translateX(-150px); 
-  transition: opacity 1s, transform 1s;
-}
-
-.animation_Scroll .About-Grid-2 {
-  opacity: 0;
-  transform: translatex(150px); 
-  transition: opacity 1s, transform 1s;
-}
-
-.animation_Scroll.animate .About-Myself-1,
-.animation_Scroll.animate .About-Grid-1,
-.animation_Scroll.animate .About-Grid-2 {
-  opacity: 1;
-  transform: translateY(0) translateX(0); 
-}
-/* About Css end Here  */
-
-/* Start Css Start Here  
-.animation_Skills .Skills-About-Slef {
-  opacity: 0;
-  transform: translateY(-50px);
-  transition: opacity 1s, transform 1s;
-}
-
-.animation_Skills .Img-Skills {
-  opacity: 0;
-  transform: translateX(-150px); 
-  transition: opacity 1s, transform 1s;
-}
-
-.animation_Skills.animate .Skills-About-Slef,
-.animation_Skills.animate .Img-Skills {
-  opacity: 1;
-  transform: translateY(0) translateX(0); 
-}
-/* Skills Css End Here  */
-
-/* project Css Start Here  
-.animation_project .Clg-Project-Skills{
-  opacity: 0;
-  transform: translateY(-50px); 
-  transition: opacity 1s, transform 1s;
-}
-
-.animation_project .Details-Project-1 {
-  opacity: 0;
-  transform: translateX(-150px); 
-  transition: opacity 1s, transform 1s;
-}
-
-.animation_project .Details-Project-2 {
-  opacity: 0;
-  transform: translatex(150px); 
-  transition: opacity 1s, transform 1s;
-}
-.animation_project .Design_web_project {
-  opacity: 0;
-}
-.animation_project .About-Web {
-  opacity: 0;
-}
-
-.animation_project.animate .Clg-Project-Skills,
-.animation_project.animate .Details-Project-1,
-.animation_project.animate .Details-Project-2 {
-  opacity: 1;
-  transform: translateY(0) translateX(0); 
-}
-.animation_project.animate .Design_web_project,
-.animation_project.animate .About-Web {
-  opacity: 1;
-}
-/* project Css end Here  */
-
-/* Contant Css Start Here  
-.animate_contant .Name-About_Contant {
-  opacity: 0;
-  transform: translateY(-50px); 
-  transition: opacity 1s, transform 1s;
-}
-
-.animate_contant .Grid_Contant-Details_Content-1 {
-  opacity: 0;
-  transform: translateX(-150px); 
-  transition: opacity 1s, transform 1s;
-}
-
-.animate_contant .Grid_Contant-Details_Content-2 {
-  opacity: 0;
-  transform: translatex(150px); 
-  transition: opacity 1s, transform 1s;
-}
-
-.animate_contant.animate .Name-About_Contant,
-.animate_contant.animate .Grid_Contant-Details_Content-1,
-.animate_contant.animate .Grid_Contant-Details_Content-2 {
-  opacity: 1;
-  transform: translateY(0) translateX(0); 
-}
-/* Contant Css end Here  */
-
-/* @media screen and (max-width:1100px) {
-.animation_Skills .Skills-About-Slef,
-.animation_Skills .Img-Skills,
-  .animation_project .Clg-Project-Skills,
-.animation_project .Details-Project-1,
-.animation_project .Details-Project-2,
-  .animate_contant .Name-About_Contant,
-.animate_contant .Grid_Contant-Details_Content-1,
-.animate_contant .Grid_Contant-Details_Content-2 
-{
-opacity: 1;
-transform: translatex(0px); 
-transition: opacity 1s, transform 1s;
-}
-}
-@media screen and (max-width:1100px){
-
-  .animation_Scroll .About-Myself-1 {
-    opacity: 1;
-    transform: translateY(-0px); 
-    transition: opacity 1s, transform 1s;
-  }
-  
-  .animation_Scroll .About-Grid-1 {
-    opacity: 1;
-    transform: translateX(-0px); 
-    transition: opacity 1s, transform 1s;
-  }
-  
-  .animation_Scroll .About-Grid-2 {
-    opacity: 1;
-    transform: translatex(0px); 
-    transition: opacity 1s, transform 1s;
-  }
-
-
-.animation_project .Design_web_project,
-.animation_project .About-Web{
-  opacity: 1;
-}
-}
-
-@media screen and (max-width:1100px) {
-  .Name-About {
-   animation: topdown 1.5s ease-in-out;
-  }
-  @keyframes topdown {
-    0% {
-      transform: translatey(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translatey(0);
-      opacity: 1;
-    }
-  }
-  
-  .About-Grid-1 {
-    animation: topyjg 1.5s ease-in-out;
-  }
-  @keyframes topyjg {
-    0% {
-      transform: translatex(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translatex(0);
-      opacity: 1;
-    }
-  }
-  
-  .About-Grid-2 {
-    animation: rightfdr 1.5s ease-in-out;
-  }
-  @keyframes rightfdr {
-    0% {
-      transform: translatex(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translatex(0);
-      opacity: 1;
-    }
-  }
-} */
-
 div.Under_Matter_Design{
   display: flex;
   justify-content: center;
@@ -2587,7 +2371,7 @@ h1.Name_Under_Contant{
   }
 }
 
-
+/* About Animation Start Here */
 div.animation_About .Name-About {
   opacity: 0;
   transform: translateY(-50px);
@@ -2609,29 +2393,113 @@ div.animation_About.animate .About-Grid-2 {
   opacity: 1;
   transform: translateY(0);
 }
+/* About Animation end Here */
 
 /* Skills Animation Start Here */
-div.animation_Skills .Skills-About-Slef {
+.animation_Skills .Skills-About-Slef{
   opacity: 0;
   transform: translateY(-50px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-div.animation_Skills .Skills_Tags_Dis {
+
+.animation_Skills .Skills_Tags_Dis {
   opacity: 0;
-  transform: translatex(-150px);
+  transform: translateX(-150px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-div.animation_Skills.animate .Skills-About-Slef,
-div.animation_Skills.animate .Skills_Tags_Dis {
+
+.animation_Skills.animate .Skills-About-Slef,
+.animation_Skills.animate .Skills_Tags_Dis {
   opacity: 1;
   transform: translateY(0);
 }
 
+.animation_Skills.animate div.Html-Progress-Bar-Per-1 {
+  width: 0%;
+  cursor: pointer;
+  transition: width 2s ease-in-out;
+  animation: durationforw 2s forwards ease-in-out;
+}
+@keyframes  durationforw {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+
 /* Skills Animation end here */
 
 
+/* Project Animation start here */
 
+.animation_project .Clg-Project-Skills{
+  opacity: 0;
+  transform: translateY(-50px); 
+  transition: opacity 1s, transform 1s;
+}
 
+.animation_project .Details-Project-1 {
+  opacity: 0;
+  transform: translateX(-150px); 
+  transition: opacity 1s, transform 1s;
+}
+
+.animation_project .Details-Project-2 {
+  opacity: 0;
+  transform: translatex(150px); 
+  transition: opacity 1s, transform 1s;
+}
+.animation_project .Design_web_project {
+  opacity: 0;
+}
+.animation_project .About-Web {
+  opacity: 0;
+}
+
+.animation_project.animate .Clg-Project-Skills,
+.animation_project.animate .Details-Project-1,
+.animation_project.animate .Details-Project-2 {
+  opacity: 1;
+  transform: translateY(0) translateX(0); 
+}
+.animation_project.animate .Design_web_project,
+.animation_project.animate .About-Web {
+  opacity: 1;
+}
+
+/* Project Animation End here */
+
+/* Contant animation start here */
+
+.animate_contant .Name-About_Contant {
+  opacity: 0;
+  transform: translateY(-50px); 
+  transition: opacity 1s, transform 1s;
+}
+
+.animate_contant .Grid_Contant-Details_Content-1 {
+  opacity: 0;
+  transform: translateX(-150px); 
+  transition: opacity 1s, transform 1s;
+}
+
+.animate_contant .Grid_Contant-Details_Content-2 {
+  opacity: 0;
+  transform: translatex(150px); 
+  transition: opacity 1s, transform 1s;
+}
+
+.animate_contant.animate .Name-About_Contant,
+.animate_contant.animate .Grid_Contant-Details_Content-1,
+.animate_contant.animate .Grid_Contant-Details_Content-2 {
+  opacity: 1;
+  transform: translateY(0) translateX(0); 
+}
+
+/* Contant Animation End here */
 
 #About, #Skills, #Project, #Contant {
   position: relative;
