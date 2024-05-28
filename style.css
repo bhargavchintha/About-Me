@@ -841,6 +841,12 @@ div.About-Image-Left-Side {
     width: 14.5%;
   }
 }
+@media screen and (max-width: 1115px){
+  div.About-Image-Left-Side{
+    margin-left: -50px;
+    width: 13.5%;
+  }
+}
 @media screen and (max-width: 1000px){
   div.About-Image-Left-Side{
     margin-left: -50px;
@@ -2285,7 +2291,8 @@ button.Back_Top_Btn:hover #UP_Arrow{
     transform: translateY(-5px);
   }
 }
-/* About Css Start Here  */
+
+/* About Css Start Here  
 
 .animation_Scroll .About-Myself-1 {
   opacity: 0;
@@ -2313,7 +2320,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
 }
 /* About Css end Here  */
 
-/* Start Css Start Here  */
+/* Start Css Start Here  
 .animation_Skills .Skills-About-Slef {
   opacity: 0;
   transform: translateY(-50px);
@@ -2333,7 +2340,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
 }
 /* Skills Css End Here  */
 
-/* project Css Start Here  */
+/* project Css Start Here  
 .animation_project .Clg-Project-Skills{
   opacity: 0;
   transform: translateY(-50px); 
@@ -2370,7 +2377,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
 }
 /* project Css end Here  */
 
-/* Contant Css Start Here  */
+/* Contant Css Start Here  
 .animate_contant .Name-About_Contant {
   opacity: 0;
   transform: translateY(-50px); 
@@ -2397,7 +2404,7 @@ button.Back_Top_Btn:hover #UP_Arrow{
 }
 /* Contant Css end Here  */
 
-@media screen and (max-width:1100px) {
+/* @media screen and (max-width:1100px) {
 .animation_Skills .Skills-About-Slef,
 .animation_Skills .Img-Skills,
   .animation_project .Clg-Project-Skills,
@@ -2481,7 +2488,7 @@ transition: opacity 1s, transform 1s;
       opacity: 1;
     }
   }
-}
+} */
 
 div.Under_Matter_Design{
   display: flex;
@@ -2580,6 +2587,38 @@ h1.Name_Under_Contant{
   }
 }
 
+
+div.animation_About .Name-About {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+div.animation_About .About-Grid-1 {
+  opacity: 0;
+  transform: translatex(-150px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+div.animation_About .About-Grid-2 {
+  opacity: 0;
+  transform: translatex(150px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+div.animation_About.animate .Name-About,
+div.animation_About.animate .About-Grid-1,
+div.animation_About.animate .About-Grid-2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+#About, #Skills, #Project, #Contant {
+  position: relative;
+}
 
 
 /*
