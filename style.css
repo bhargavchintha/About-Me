@@ -1031,7 +1031,6 @@ div.Skills-About-My{
   div.Skills-About-My{
     width: 70%;
     margin: auto;
-    margin-left: 300px;
   }
 }
 @media screen and (max-width: 1000px){
@@ -1044,14 +1043,12 @@ div.Skills-About-My{
   div.Skills-About-My{
     width: 70%;
     margin: auto;
-    margin-left: 200px;
   }
 }
 @media screen and (max-width: 700px){
   div.Skills-About-My{
     width: 80%;
     margin: auto;
-    margin-left: 130px;
   }
   div.About-MY-Self-1{
     margin-top: 30px;
@@ -1061,8 +1058,6 @@ div.Skills-About-My{
   div.Skills-About-My{
     width: 85%;
     margin: auto;
-    margin-left: 50px;
-
   }
 }
 div.Html-Image-About{
@@ -1072,7 +1067,7 @@ div.Html-Image-About{
 }
 @media screen and (max-width: 550px){
   div.Skills-About-My{
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
 }
@@ -1086,7 +1081,6 @@ div.Html-Image-About{
   div.Skills-About-My{
     width: 90%;
     margin: auto;
-    margin-left: 0px;
   }
 }
 
