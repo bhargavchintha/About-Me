@@ -34,8 +34,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             }
         });
     });
-
-   
     divs.forEach((div) => {
         if (isInViewport(div, 100)) {
             div.classList.add('animate');
