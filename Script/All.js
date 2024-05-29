@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const divs = document.querySelectorAll(".Section_Scroll");
     const navLinks = document.querySelectorAll("nav a.NAV-Items");
 
-    function isInViewport(element, offset = 20) {
+    function isInViewport(element, offset = -25) {
         const rect = element.getBoundingClientRect();
         return (
             rect.top >= -offset &&
@@ -11,7 +11,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
-
     window.addEventListener('scroll', () => {
         let current = "";
 
@@ -21,12 +20,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 current = div.getAttribute("id");
             }
 
-          
             if (isInViewport(div, 100)) {
                 div.classList.add('animate');
             }
         });
-
         navLinks.forEach((link) => {
             link.classList.remove("active");
             if (link.getAttribute("href").substring(1) === current) {
@@ -34,8 +31,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             }
         });
     });
-
-   
     divs.forEach((div) => {
         if (isInViewport(div, 100)) {
             div.classList.add('animate');
