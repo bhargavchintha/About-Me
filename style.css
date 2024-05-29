@@ -1047,17 +1047,18 @@ div.Skills-About-My{
 @media screen and (max-width: 700px){
   div.Skills-About-My{
     width: 80%;
-    margin-left: 100px;
+    margin-left: 0px;
+    margin: auto;
   }
   div.About-MY-Self-1{
     margin-top: 30px;
   }
 }
-@media screen and (max-width: 660px){
+@media screen and (max-width: 300px){
   div.Skills-About-My{
-    width: 85%;
+    width: 90%;
     margin: auto;
-    margin-left: 80px;
+    overflow: hidden;
   }
 }
 div.Html-Image-About{
@@ -1065,17 +1066,6 @@ div.Html-Image-About{
   margin: auto;
   position: relative;
 }
-@media screen and (max-width: 550px){
-  div.Skills-About-My{
-    width: 80%;
-  }
-}
-
-/* @media screen and (max-width: 480px){
-  div.Skills-About-My{
-   margin-left: 40px;
-  }
-} */
 
 div.Skills-About-Slef {
   text-align: center;
@@ -1111,6 +1101,11 @@ img.Htmls-Img-Src{
 }
 div.Html-5-Skills{
   width: 90%;
+}
+@media screen and (max-width:660px) {
+  div.Html-5-Skills{
+    width: 100%;
+  }
 }
 div.Skills_Grid{
   display: grid;
