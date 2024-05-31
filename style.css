@@ -2452,7 +2452,7 @@ div.animation_About.animate .About-Grid-2 {
   transform: translateY(0);
 }
 
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) {
   div.animation_About .Name-About {
     opacity: 1;
     transform: translateY(0px);
@@ -2468,7 +2468,7 @@ div.animation_About.animate .About-Grid-2 {
     transform: translateY(0px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
-}
+} */
 /* About Animation end Here */
 
 /* Skills Animation Start Here */
@@ -2516,7 +2516,7 @@ div.animation_About.animate .About-Grid-2 {
   }
 }
 
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) {
   .animation_Skills .Skills-About-Slef {
     opacity: 1;
     transform: translateY(0px);
@@ -2546,7 +2546,7 @@ div.animation_About.animate .About-Grid-2 {
       width: 100%;
     }
   }
-}
+} */
 
 /* Skills Animation end here */
 
@@ -2621,7 +2621,7 @@ div.animation_About.animate .About-Grid-2 {
   transform: translateY(0) translateX(0); 
 }
 
-@media screen and (max-width:500px) {
+/* @media screen and (max-width:500px) {
   .animation_Contact .Name-About_Contant {
     opacity: 1;
     transform: translateY(0px);
@@ -2639,7 +2639,7 @@ div.animation_About.animate .About-Grid-2 {
     transform: translateY(0px);
     transition: opacity 1s, transform 1s;
   }
-}
+} */
 /* Contant Animation End here */
 
 
