@@ -37,3 +37,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 });
+
+// Tabs handling for Web Projects
+document.addEventListener('DOMContentLoaded', function(){
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  if(!tabButtons.length || !tabPanels.length) return;
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-tab');
+      tabButtons.forEach(b => b.classList.remove('active'));
+      tabPanels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      const panel = document.getElementById(target);
+      if(panel) panel.classList.add('active');
+    });
+  });
+});

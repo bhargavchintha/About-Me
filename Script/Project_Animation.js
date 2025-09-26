@@ -1,51 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const ProjectSection = document.getElementById('Project');
+    const projectSection = document.getElementById('Project');
+    if (!projectSection) return;
 
-    function isInViewport(element, offset = 0) {
-        const rect = element.getBoundingClientRect();
-        return (
-            rect.top >= -offset &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                projectSection.classList.add('animate');
+                obs.unobserve(projectSection);
+            }
+        });
+    }, {
+        // Trigger a bit before fully in view
+        root: null,
+        rootMargin: "0px 0px -30% 0px",
+        threshold: 0
+    });
 
-    function handleAnimation() {
-        if (isInViewport(ProjectSection, 40)) {
-          ProjectSection.classList.add('animate');
-
-            window.removeEventListener('scroll', handleAnimation);window.addEventListener('DOMContentLoaded', () => {
-                const projectSection = document.getElementById('Project');
-                const projectSkills = projectSection.querySelector('.Clg-Project-Skills');
-                const projectDetails = projectSection.querySelector('.Clg-Project-Details');
-                const designWebProject = projectSection.querySelector('.Design_web_project');
-            
-                function isInViewport(element) {
-                    const rect = element.getBoundingClientRect();
-                    return (
-                        rect.top >= 0 &&
-                        rect.left >= 0 &&
-                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                    );
-                }
-            
-                function handleScrollAnimation() {
-                    if (isInViewport(projectSkills) || isInViewport(projectDetails) || isInViewport(designWebProject)) {
-                        projectSection.classList.add('animate');
-                    }
-                }
-            
-                window.addEventListener('scroll', handleScrollAnimation);
-            
-                // Initial check
-                handleScrollAnimation();
-            });
-            
-        }
-    }
-
-    handleAnimation();
-    window.addEventListener('scroll', handleAnimation);
+    observer.observe(projectSection);
 });

@@ -825,7 +825,7 @@ div.About-Image-Left-Side {
 @media screen and (max-width: 1400px){
   div.About-Image-Left-Side{
     margin-left: -50px;
-    width: 12.5%;
+    width: 12.2%;
   }
 }
 
@@ -935,13 +935,13 @@ div.Link-Website-BH{
   align-items: center;
   justify-content: center;
 }
-.fa-linkedin,
+/* .fa-linkedin,
 .fa-twitter,
 .fa-instagram,
 .fa-github{
-  color: var(--Black013B72);
+   color: var(--Black013B72); 
   
-}
+} */
 a.Link-Linked,
 a.Link-Twitter,
 a.Link-instagram,
@@ -951,12 +951,39 @@ a.Link-Github {
   justify-content: center; 
   align-items: center; 
   padding: 10px;
-  border: 2px solid var(--013B72Black);
+  /* border: 2px solid var(--013B72Black); */
   border-radius: 50%;
   width: 50px;
   height: 50px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+}
+a.Link-Linked{
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #126BC4;
+  width: 45px;
+  height: 45px;
+}
+a.Link-Twitter{
+  background-color: #000;
+  font-size: 20px;
+  width: 42px;
+  height: 42px;
+}
+a.Link-instagram{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  font-size: 20px;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+}
+a.Link-Github{
+  background-color: #000;
+  font-size: 20px;
+  color: #fff;
+  width: 45px;
+  height: 45px;
 }
 @media screen and (max-width: 460px){
   a.Link-Linked,
@@ -972,9 +999,9 @@ a.Link-Linked:hover,
 a.Link-Twitter:hover,
 a.Link-instagram:hover,
 a.Link-Github:hover{
-  box-shadow: 1px 2px 10px var(--013B72Black);
+  /* box-shadow: 1px 2px 10px var(--013B72Black);
   background-color: var(--013B72Black);
-  border: 2px solid var(--Oranfff);
+  border: 2px solid var(--Oranfff); */
   transform: scale(1.2);
 }
 a.Link-Linked:hover .fa-linkedin,
@@ -1391,9 +1418,78 @@ div.About-Web {
   margin: auto;
 }
 div.About-Web-Project {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
+
+/* Tabs for Web Projects */
+div.web-tabs{
+  width: 80%;
+  margin: 30px auto 0 auto;
+}
+div.tab-buttons{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+button.tab-button {
+  position: relative;
+  overflow: hidden; /* hide shine outside button */
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--013B72Black);
+  background-color: var(--ffff);
+  color: var(--013B72);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+}
+
+/* Shine effect (pseudo-element) */
+button.tab-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%; /* start far left */
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    var(--B013B72I),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+/* Animate shine on hover only if NOT active */
+button.tab-button:hover:not(.active)::after {
+  animation: shine 0.8s forwards;
+}
+
+/* Active button styling */
+button.tab-button.active {
+  background-color: var(--B013B72I);
+  color: #fff;
+  border-color: var(--B013B72I);
+}
+
+/* Shine keyframes */
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+div.tab-panel{ display: none; }
+div.tab-panel.active{ display: block; }
 
 div.About-Web-Grid {
   margin-top: 20px;
@@ -1401,7 +1497,8 @@ div.About-Web-Grid {
   grid-template-columns: auto auto auto;
   gap: 20px; 
   overflow: hidden;
-
+justify-content: center;
+align-items: center;
 }
 @media screen and (max-width: 1200px){
   div.About-Web-Grid{
@@ -2554,26 +2651,26 @@ div.animation_About.animate .About-Grid-2 {
 /* Project Animation start here */
 
 .animation_Project .Clg-Project-Skills {
-  opacity: 1;
-  /* transform: translateY(-50px);  */
+  opacity: 0;
+  transform: translateY(-50px);
   transition: opacity 1s, transform 1s;
 }
 
 .animation_Project .Details-Project-1 {
-  opacity: 1;
-  /* transform: translateX(-150px);  */
+  opacity: 0;
+  transform: translateX(-150px);
   transition: opacity 1s, transform 1s;
 }
 
 .animation_Project .Details-Project-2 {
-  opacity: 1;
-  /* transform: translateX(150px);  */
+  opacity: 0;
+  transform: translateX(150px);
   transition: opacity 1s, transform 1s;
 }
 
-.animation_project .Design_web_project,
-.animation_project .About-Web {
-  opacity: 1;
+.animation_Project .Design_web_project,
+.animation_Project .About-Web {
+  opacity: 0;
   transition: opacity 1s;
 } 
 
@@ -2584,10 +2681,10 @@ div.animation_About.animate .About-Grid-2 {
   transform: translateY(0) translateX(0); 
 }
 
-/* .animation_project.animate .Design_web_project,
-.animation_project.animate .About-Web {
+.animation_Project.animate .Design_web_project,
+.animation_Project.animate .About-Web {
   opacity: 1;
-} */
+}
 
 
 
