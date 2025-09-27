@@ -1435,6 +1435,25 @@ div.tab-buttons{
   align-items: center;
   margin-top: 10px;
 }
+@media screen and (max-width: 500px){
+  div.tab-buttons{
+   display: grid;
+   grid-template-columns: auto auto;
+    gap: 8px;
+    justify-content: center;
+  }
+  .tab-span-btn{
+    grid-column: span 2;
+  }
+}
+@media screen and (max-width: 370px){
+  div.tab-buttons{
+   grid-template-columns: auto;
+  }
+   .tab-span-btn{
+    grid-column: span 1;
+  }
+}
 button.tab-button {
   position: relative;
   overflow: hidden; /* hide shine outside button */
@@ -1447,6 +1466,12 @@ button.tab-button {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-size: 16px;
+}
+@media screen and (max-width: 580px){
+  button.tab-button{
+    font-size: 14px;
+    padding: 8px 12px;
+  } 
 }
 
 /* Shine effect (pseudo-element) */

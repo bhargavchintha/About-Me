@@ -1,27 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
     const AboutSection = document.getElementById('About');
+    if (!AboutSection) return;
 
-   
     function isInViewport(element, offset = 0) {
         const rect = element.getBoundingClientRect();
         return (
-            rect.top >= -offset &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            rect.top < (window.innerHeight || document.documentElement.clientHeight) - offset &&
+            rect.bottom > offset
         );
     }
 
-    // Function to handle animation
     function handleAnimation() {
         if (isInViewport(AboutSection, 20)) {
             AboutSection.classList.add('animate');
-          
             window.removeEventListener('scroll', handleAnimation);
         }
     }
 
-   
     handleAnimation();
     window.addEventListener('scroll', handleAnimation);
 });
