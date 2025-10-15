@@ -716,7 +716,7 @@ div.About-Grid-Name{
   width: 70%;
   margin: auto;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width:1180px){
@@ -737,10 +737,17 @@ div.About-Grid-Name{
     margin-left: 140px;
   }
 }
+@media screen and (max-width:950px){
+  div.About-Grid-Name{
+    margin: auto;
+    display: block;
+  } 
+}
 @media screen and (max-width:900px){
   div.About-Grid-Name{
     width: 85%;
     margin-left: 100px;
+    
   }
 }
 @media screen and (max-width:800px){
@@ -774,6 +781,7 @@ img.IMG-Grid-BH{
 @media screen and (max-width:1000px){
   img.IMG-Grid-BH{
     width: 350px;
+     float: left !important;
   }
 }
 @media screen and (max-width:900px){
