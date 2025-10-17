@@ -1,12 +1,22 @@
-function openPrivacyPolicy() {
-  document.getElementById('privacyModal').style.display = 'block';
-}
-function closePrivacyPolicy() {
-  document.getElementById('privacyModal').style.display = 'none';
-}
-window.onclick = function(event) {
-  var modal = document.getElementById('privacyModal');
-  if (event.target == modal) {
-    modal.style.display = 'none';
-  }
-};
+
+    function openPrivacyPolicy() {
+      const modal = document.getElementById('privacyModal');
+      if (modal) {
+        modal.style.display = 'block';
+      }
+    }
+
+    function closePrivacyPolicy() {
+      const modal = document.getElementById('privacyModal');
+      if (modal) {
+        modal.style.display = 'none';
+      }
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('privacyModal');
+      if (modal && event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+ 
