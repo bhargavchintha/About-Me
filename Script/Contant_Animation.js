@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const ContentSection = document.getElementById('Content');
+    const ContentSection = document.getElementById('Contactme');
     if (!ContentSection) return;
 
     function isInViewport(element, offset = 0) {

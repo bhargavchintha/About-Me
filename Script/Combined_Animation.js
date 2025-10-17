@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             offset: 140,
             elements: ['.Clg-Project-Skills', '.Details-Project-1', '.Details-Project-2', '.Design_web_project', '.About-Web']
         },
-        'Content': {
+        'Contactme': {
             offset: 20,
             elements: ['.Name-About_Contant', '.Grid_Contant-Details_Content-1', '.Grid_Contant-Details_Content-2']
         }

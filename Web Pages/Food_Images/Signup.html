@@ -953,24 +953,28 @@ function updateOptions() {
   
   
   
-        <script>
-          document.addEventListener("DOMContentLoaded", () => {
-            const cookieContainer = document.querySelector(".cookie-container");
-            const cookieButton = document.querySelector(".cookie-btn");
-        
-            cookieButton.addEventListener("click", () => {
-              cookieContainer.classList.remove("active");
-        
-              localStorage.setItem("_grecaptcha(done by bhargav)", "09AINsHFc2uoI1NI35z0ref-oSZUuZUxeHb6E2g-zYQ7VS7l6GUozDM2ZnCgQ2BeiDsDMeZirZK2p5cOPVMKflDc0");
-            });
-        
-            setTimeout(() => {
-              if (!localStorage.getItem("_grecaptcha(done by bhargav)")) {
-                cookieContainer.classList.add("active");
-              }
-            }, 100);
-          });
-        </script>
+        <!-- <script>
+         document.addEventListener("DOMContentLoaded", () => {
+  const cookieContainer = document.querySelector(".cookie-container");
+  const cookieButton = document.querySelector(".cookie-btn");
+
+  if (cookieContainer && cookieButton) {
+    cookieButton.addEventListener("click", () => {
+      cookieContainer.classList.remove("active");
+      localStorage.setItem("_grecaptcha(done by bhargav)", "09AINsHFc2uoI1NI35z0ref-oSZUuZUxeHb6E2g-zYQ7VS7l6GUozDM2ZnCgQ2BeiDsDMeZirZK2p5cOPVMKflDc0");
+    });
+
+    setTimeout(() => {
+      if (!localStorage.getItem("_grecaptcha(done by bhargav)")) {
+        cookieContainer.classList.add("active");
+      }
+    }, 100);
+  } else {
+    console.error('Cookie container or button is missing in the DOM.');
+  }
+});
+
+        </script> -->
         
   
   
