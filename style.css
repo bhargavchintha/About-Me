@@ -978,74 +978,109 @@ div.Link-Website-BH{
    color: var(--Black013B72); 
   
 } */
-a.Link-Linked,
-a.Link-Twitter,
-a.Link-instagram,
+/* General Link Styling */
+/* General Link Styling */
+a.Link-Linked, 
+a.Link-Twitter, 
+a.Link-instagram, 
 a.Link-Github {
   font-size: 20px;
-  display: inline-flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  /* border: 2px solid var(--013B72Black); */
   border-radius: 50%;
   width: 50px;
   height: 50px;
   text-decoration: none;
+  position: relative;
   transition: all 0.3s ease-in-out;
 }
-a.Link-Linked{
+
+a.Link-Linked {
   border: 2px solid #fff;
   color: #fff;
-  background-color: #126BC4;
+  background-color: #126BC4; 
   width: 45px;
   height: 45px;
 }
-a.Link-Twitter{
-  background-color: #000;
-  font-size: 20px;
+a.Link-Twitter {
+  background-color: #000; 
   width: 42px;
   height: 42px;
 }
-a.Link-instagram{
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  font-size: 20px;
+a.Link-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); /* Instagram gradient */
   color: #fff;
   width: 45px;
   height: 45px;
 }
-a.Link-Github{
-  background-color: #000;
-  font-size: 20px;
+a.Link-Github {
+  background-color: #000; 
   color: #fff;
   width: 45px;
   height: 45px;
 }
-@media screen and (max-width: 460px){
+
+
+.particles-field {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none; 
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+a.Link-Linked:hover .particles-field,
+a.Link-Twitter:hover .particles-field,
+a.Link-instagram:hover .particles-field,
+a.Link-Github:hover .particles-field {
+  opacity: 1;
+}
+
+@keyframes particleFloat {
+  0% { transform: translate(var(--x), var(--y)) scale(0); }
+  50% { transform: translate(calc(var(--x) * -1), calc(var(--y) * -1)) scale(1); }
+  100% { transform: translate(var(--x), var(--y)) scale(0); }
+}
+
+/* Responsive Size */
+@media screen and (max-width: 460px) {
   a.Link-Linked,
   a.Link-Twitter,
   a.Link-instagram,
-  a.Link-Github{
+  a.Link-Github {
     width: 35px;
     height: 35px;
     font-size: 15px;
   }
 }
+
 a.Link-Linked:hover,
 a.Link-Twitter:hover,
 a.Link-instagram:hover,
-a.Link-Github:hover{
-  /* box-shadow: 1px 2px 10px var(--013B72Black);
-  background-color: var(--013B72Black);
-  border: 2px solid var(--Oranfff); */
+a.Link-Github:hover {
   transform: scale(1.2);
 }
+
+/* Optional: Change icon color on hover */
 a.Link-Linked:hover .fa-linkedin,
 a.Link-Twitter:hover .fa-twitter,
 a.Link-instagram:hover .fa-instagram,
-a.Link-Github:hover .fa-github{
+a.Link-Github:hover .fa-github {
   color: var(--Oranfff);
 }
+
+
 .Both_Links{
   margin-left: 15px;
 }
@@ -3015,7 +3050,7 @@ div.animation_About.animate .About-Grid-2 {
   }
   .cookie-acc-text {
     margin-right: 15px;
-    color: var(--ffff);
+    color: #fff !important;
   }
 
   .cookie-acc-button-container {

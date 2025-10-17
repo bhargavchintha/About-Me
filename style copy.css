@@ -49,6 +49,7 @@ body{
    --background-Animation-black:url(Svg/Black_Img-Svg.png);
    --rbgwhite:rgba(0, 0, 0, 0.3);
    --000:#000;
+   --pop:#000;
 }
 
 .dark-side{
