@@ -1,4 +1,3 @@
-// Combined Animation Script for all sections
 document.addEventListener("DOMContentLoaded", function() {
     // Animation configurations for each section
     const animationConfigs = {
@@ -22,11 +21,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function isInViewport(element, offset = 0) {
         const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+        
+        // Adjust offset for mobile view (increase for smaller screens)
+        if (windowWidth <= 768) {
+            offset = 60;
+        }
+
         return (
             rect.top >= -offset &&
             rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            rect.bottom <= windowHeight + offset &&
+            rect.right <= windowWidth
         );
     }
 
@@ -40,9 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
         if (isInViewport(section, config.offset)) {
             console.log(`Animating section: ${sectionId}`);
             section.classList.add('animate');
-            
-            // Remove event listener for this section after animation
-            window.removeEventListener('scroll', () => handleSectionAnimation(sectionId, config));
+        } else {
+            console.log(`Section ${sectionId} is out of view`);
         }
     }
 
@@ -52,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // Initial check
         handleSectionAnimation(sectionId, config);
-        
-        // Scroll listener
+
+        // Scroll listener for dynamic updates
         window.addEventListener('scroll', () => handleSectionAnimation(sectionId, config));
     });
 
@@ -66,4 +72,10 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(`Section not found: ${sectionId}`);
         }
     });
+
+    // Debugging scroll events
+    window.addEventListener('scroll', () => {
+        console.log("Scroll event detected!");
+    });
+
 });
