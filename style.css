@@ -2863,6 +2863,27 @@ div.animation_About.animate .About-Grid-2 {
   transform: translatex(150px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+@media screen and (max-width:500px) {
+
+  .animation_Skills .Skills-About-Slef {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .animation_Skills .Grid_Skills_1 {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .animation_Skills .Grid_Skills_2 {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+}
+
+
 /* .animation_Skills .Skills_Tags_Dis {
   opacity: 0;
   transform: translateX(-150px);
