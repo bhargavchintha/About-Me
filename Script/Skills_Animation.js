@@ -3,14 +3,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function isInViewport(element, offset = 0) {
         const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+        
+        // For mobile devices, increase offset or adjust height calculation
+        if (windowWidth <= 768) {  // Mobile breakpoint
+            offset = 60;  // More offset for mobile view
+        }
+
         return (
             rect.top >= -offset &&
             rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            rect.bottom <= windowHeight + offset &&
+            rect.right <= windowWidth
         );
     }
-
 
     function handleAnimation() {
         if (isInViewport(skillsSection, 20)) {
